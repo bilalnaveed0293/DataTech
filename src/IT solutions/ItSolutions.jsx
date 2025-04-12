@@ -66,7 +66,7 @@ const TechIntegrationShowcase = () => {
           <p className="text-lg text-gray-300 mb-6">
             Connect your favorite tools and find new Add-Ons.
           </p>
-          <button className="bg-white text-gray-900 px-6 py-2 rounded-full font-medium flex items-center mx-auto hover:bg-gray-100 transition-colors">
+          <button className="bg-white text- px-6 py-2 rounded-full font-medium flex items-center mx-auto hover:bg-gray-100 transition-colors">
             Get Started <span className="ml-2">→</span>
           </button>
         </div>

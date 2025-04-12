@@ -30,7 +30,7 @@ const Faq = () => {
   return (
     <div className="bg-[#CEDAFA] min-h-screen flex flex-col items-center justify-center p-6">
       <div className="text-center mb-9">
-        <p className="text-blue-600 font-semibold tracking-wide">••• FAQs</p>
+        <p className="text-[#3754A1] font-semibold tracking-wide">••• FAQs</p>
         <h2 className="text-5xl font-normal text-gray-900 mt-2">Ask us anything</h2>
         <p className="text-gray-600 mt-2">Have any questions? We're here to assist you.</p>
       </div>

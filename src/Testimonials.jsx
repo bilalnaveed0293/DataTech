@@ -97,14 +97,14 @@ const Testimonials = () => {
         <div className="flex justify-center items-center space-x-2 mt-25">
           <button 
             onClick={handlePrev}
-            className="w-8 h-8 flex items-center justify-center border border-gray-300 rounded-full hover:bg-[#3754A1] hover:text-white transition duration-300 ease-in-out bg-white text-black"
+            className="w-8 h-8 flex items-center justify-center border border-gray-300 rounded-full hover:bg-[#3754A1] hover:text-white transition duration-300 ease-in-out bg-white text-black cursor-pointer"
           >
             <span className="sr-only">Previous</span>
             &lt;
           </button>
           <button 
             onClick={handleNext}
-            className="w-8 h-8 flex items-center justify-center bg-white text-black rounded-full hover:bg-[#3754A1] hover:text-white transition duration-300 ease-in-out border-gray-300 border"
+            className="w-8 h-8 flex items-center justify-center bg-white text-black rounded-full hover:bg-[#3754A1] hover:text-white transition duration-300 ease-in-out border-gray-300 border cursor-pointer"
           >
             <span className="sr-only">Next</span>
             &gt;

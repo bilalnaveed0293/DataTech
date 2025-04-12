@@ -29,9 +29,9 @@ function App() {
       <ValueStrategy/>
       <NumbersBanner/>
       <ThreeStepProcess/>
-      <Testimonials/>
       <BenefitsSection/>
       <TechIntegrationShowcase/>
+      <Testimonials/>
       <Faq/>
       <JoinToExplore/>
     </div>

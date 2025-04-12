@@ -9,13 +9,13 @@ const FeaturesSection = () => {
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-16">
         {/* Left side - Text */}
         <div className="max-w-lg">
-          <div className="inline-block bg-blue-100 text-blue-600 px-4 py-1 rounded-full text-sm font-medium mb-4">
-            • OUR FEATURES
+          <div className="inline-block bg-[#CFDFFF] text-[#3754A1] px-4 py-1 rounded-full text-sm font-medium mb-4">
+           ••• OUR FEATURES
           </div>
-          <h2 className="text-4xl font-bold text-gray-900 mb-2">
-            Together, we are creating a <span className="block">Bright Future.</span>
+          <h2 className="text-4xl font-normal text-gray-900 mb-2">
+            Together, we are creating a <span className="block font-bold">Bright Future.</span>
           </h2>
-          <p className="text-2xl text-blue-600 font-medium">Join us.</p>
+          <p className="text-2xl text-[#3754A1] font-medium">Join us.</p>
         </div>
 
         {/* Right side - Images */}
@@ -48,7 +48,7 @@ const FeaturesSection = () => {
         {/* Feature 1 */}
         <div className="flex flex-col">
           <div className="bg-blue-50 p-3 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
-            <svg className="w-6 h-6 text-blue-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="w-6 h-6 text-[#3754A1]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M20 7L12 3L4 7M20 7V17L12 21M20 7L12 11M12 21L4 17V7M12 21V11M4 7L12 11"
                 stroke="currentColor"
@@ -67,7 +67,7 @@ const FeaturesSection = () => {
         {/* Feature 2 */}
         <div className="flex flex-col">
           <div className="bg-blue-50 p-3 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
-            <svg className="w-6 h-6 text-blue-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="w-6 h-6 text-[#3754A1]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M21 4H3C1.89543 4 1 4.89543 1 6V18C1 19.1046 1.89543 20 3 20H21C22.1046 20 23 19.1046 23 18V6C23 4.89543 22.1046 4 21 4Z"
                 stroke="currentColor"
@@ -87,7 +87,7 @@ const FeaturesSection = () => {
         {/* Feature 3 */}
         <div className="flex flex-col">
           <div className="bg-blue-50 p-3 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
-            <svg className="w-6 h-6 text-blue-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="w-6 h-6 text-[#3754A1]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
                 stroke="currentColor"
@@ -114,7 +114,7 @@ const FeaturesSection = () => {
         {/* Feature 4 */}
         <div className="flex flex-col">
           <div className="bg-blue-50 p-3 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
-            <svg className="w-6 h-6 text-blue-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="w-6 h-6 text-[#3754A1]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M3 21H21M3 18H21M5 18V10M19 18V10M7 10H17C17.5523 10 18 9.55228 18 9V4C18 3.44772 17.5523 3 17 3H7C6.44772 3 6 3.44772 6 4V9C6 9.55228 6.44772 10 7 10Z"
                 stroke="currentColor"

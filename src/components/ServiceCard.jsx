@@ -36,7 +36,7 @@ const ServiceCard = ({ title, description, image, isActive = false }) => {
       </div>
       {!isActive && (
         <div className="mt-4 text-right hover:text-white">
-          <span className="text-[#3754A1 font-semibold">
+          <span className="font-semibold">
             Learn More &gt;
           </span>
         </div>

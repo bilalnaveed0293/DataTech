@@ -13,13 +13,14 @@ const JoinToExplore = () => {
                     <p className="text-xl text-white mb-8">Maximize your growth.</p>
 
                     <div className="flex flex-wrap justify-center gap-4">
-                        <button className="bg-white text-gray-900 px-6 py-3 rounded-full text-xs flex items-center">
+                        <button className="hover:bg-white
+                        bg-transparent hover:text-gray-900 px-6 text-white py-3 rounded-full text-xs flex items-center cursor-pointer border-white border">
                             Get Started
                             <svg className="ml-2 w-2 h-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                             </svg>
                         </button>
-                        <button className="bg-transparent text-white border border-white px-6 py-3 rounded-full text-xs flex items-center">
+                        <button className="bg-transparent cursor-pointer text-white border hover:bg-white hover:text-gray-900  border-white px-6 py-3 rounded-full text-xs flex items-center">
                             Join Now
                             <svg className="ml-2 w-2 h-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>

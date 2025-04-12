@@ -106,7 +106,7 @@ const TechIntegrationShowcase = () => {
           <p className="text-lg text-gray-300 mb-8">
             Connect your favorite tools and find new Add-Ons.
           </p>
-          <button className="bg-white text-gray-900 px-6 py-3 rounded-full font-medium flex items-center gap-2 mx-auto hover:bg-gray-100 transition-colors">
+          <button className="hover:bg-white border border-white cursor-pointer hover:text-gray-900 px-6 py-3 rounded-full font-medium flex items-center gap-2 mx-auto bg-transparent transition-colors">
             Get Started
             <svg
               xmlns="http://www.w3.org/2000/svg"

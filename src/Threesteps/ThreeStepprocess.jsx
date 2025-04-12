@@ -30,8 +30,8 @@ const ThreeStepProcess = () => {
     <div className="py-16 px-4 bg-gray-50">
       {/* HOW IT GOES? Label */}
       <div className="text-center mb-2">
-        <span className="text-sm text-blue-600 font-medium py-1 px-4 rounded-full bg-white inline-flex items-center gap-2">
-          <span className="w-1 h-1 bg-blue-600 rounded-full"></span>
+        <span className="text-sm text-[#4A2B2B] font-medium py-1 px-4 rounded-full bg-[#ECF2FC]inline-flex items-center gap-2">
+          <span className="w-1 h-1 bg-[#110834] rounded-full"></span>
           HOW IT GOES?
         </span>
       </div>
@@ -96,7 +96,7 @@ const ThreeStepProcess = () => {
           
           {/* Explore as you Go button */}
           <div className="absolute bottom-6 right-6">
-            <button className="bg-[#3754A1] text-white px-4 py-2 rounded flex items-center gap-2 text-sm">
+            <button className="bg-[#3754A1] text-white px-4 py-2 rounded flex items-center gap-2 text-sm cursor-pointer" >
               Explore as you Go
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 12h14"></path>

@@ -94,7 +94,7 @@ const ServiceGrid = () => {
         {/* Custom Grid Layout */}
         <div className="space-y-6">
           {/* First Row: 4 Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 cursor-pointer max-w-5xl mx-auto">
             {firstRow.map((service, index) => (
               <ServiceCard
                 key={index}
@@ -108,7 +108,7 @@ const ServiceGrid = () => {
           </div>
 
           {/* Second Row: 3 Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 cursor-pointer mx-auto max-w-3xl">
             {secondRow.map((service, index) => (
               <ServiceCard
                 key={index + 4} // Offset the key to avoid duplicates
@@ -121,7 +121,7 @@ const ServiceGrid = () => {
           </div>
 
           {/* Third Row: 4 Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 cursor-pointer max-w-5xl mx-auto">
             {thirdRow.map((service, index) => (
               <ServiceCard
                 key={index + 7} // Offset the key to avoid duplicates
@@ -135,7 +135,7 @@ const ServiceGrid = () => {
 
         {/* See All Services Button */}
         <div className="text-center mt-12">
-          <button className="text-white px-8 py-3 rounded-full font-semibold bg-[#3754A1] hover:bg-blue-700 transition">
+          <button className="text-gray-900 bg-[#CFDFFF] px-8 py-3 rounded-full font-semibold  hover:bg-[#3754A1] hover:text-white transition cursor-pointer">
             See All Services
             <svg
               className="w-5 h-5 inline-block ml-2"
