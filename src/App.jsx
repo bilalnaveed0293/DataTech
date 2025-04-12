@@ -30,7 +30,6 @@ function App() {
       <NumbersBanner/>
       <ThreeStepProcess/>
       <Testimonials/>
-      <ItSolutions/>
       <BenefitsSection/>
       <TechIntegrationShowcase/>
       <Faq/>

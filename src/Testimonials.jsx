@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import p1 from "./assets/person 1.png";
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   
@@ -9,21 +9,21 @@ const Testimonials = () => {
       quote: "Data Tech made our free zone business setup process seamless. From the initial consultation to final approvals, their team provided expert guidance",
       name: "Jacob Jones",
       position: "CEO, Bernard Health",
-      image: "/api/placeholder/80/80"
+      image: p1
     },
     {
       id: 2,
       quote: "When we approached DataTech, we were struggling with outdated IT infrastructure. They completely transformed our system with advanced cloud computing.",
       name: "Brooklyn Simmons",
       position: "CEO, Bernard Health",
-      image: "/api/placeholder/80/80"
+      image: p1
     },
     {
       id: 3,
-      quote: "Their financial advisory services helped us save 35% on operational costs while improving overall efficiency.",
+      quote: "When we approached DataTech, we were struggling with outdated IT infrastructure. They completely transformed our system with advanced cloud computing.",
       name: "Alex Rivera",
       position: "CFO, Global Systems",
-      image: "/api/placeholder/80/80"
+      image: p1
     },
   ];
 
@@ -51,7 +51,7 @@ const Testimonials = () => {
       <div className="max-w-6xl mx-auto px-4">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <p className="text-blue-600 font-medium text-sm tracking-wider mb-2">
+          <p className="text-blue-600 font-medium text-xs tracking-wider mb-2">
             <span className="text-blue-400 mx-1">⋆</span> 
             OUR FEEDBACK 
             <span className="text-blue-400 mx-1">⋆</span>
@@ -67,7 +67,7 @@ const Testimonials = () => {
           {testimonials.slice(currentIndex, currentIndex + 2).map((testimonial) => (
             <div 
               key={testimonial.id}
-              className="flex-1 max-w-md bg-blue-50 rounded-xl p-6 relative"
+              className="flex-1 max-w-sm bg-[#F6F8FF] rounded-xl p-6 relative shadow-xl shadow-[#E9EEFF]"
             >
               <div className="mb-12">
                 <p className="text-gray-700">{testimonial.quote}</p>
@@ -79,7 +79,7 @@ const Testimonials = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-                  <p className="text-blue-600 text-sm">{testimonial.position}</p>
+                  <p className="text-[#3754A1] text-sm">{testimonial.position}</p>
                 </div>
               </div>
               
@@ -94,17 +94,17 @@ const Testimonials = () => {
         </div>
 
         {/* Navigation Controls */}
-        <div className="flex justify-center items-center space-x-2">
+        <div className="flex justify-center items-center space-x-2 mt-25">
           <button 
             onClick={handlePrev}
-            className="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-full hover:bg-gray-100"
+            className="w-8 h-8 flex items-center justify-center border border-gray-300 rounded-full hover:bg-[#3754A1] hover:text-white transition duration-300 ease-in-out bg-white text-black"
           >
             <span className="sr-only">Previous</span>
             &lt;
           </button>
           <button 
             onClick={handleNext}
-            className="w-10 h-10 flex items-center justify-center bg-blue-600 text-white rounded-full hover:bg-blue-700"
+            className="w-8 h-8 flex items-center justify-center bg-white text-black rounded-full hover:bg-[#3754A1] hover:text-white transition duration-300 ease-in-out border-gray-300 border"
           >
             <span className="sr-only">Next</span>
             &gt;

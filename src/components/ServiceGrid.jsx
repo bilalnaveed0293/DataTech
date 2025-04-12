@@ -73,6 +73,11 @@ const services = [
 ];
 
 const ServiceGrid = () => {
+  // Split services into three rows: 4, 3, 4
+  const firstRow = services.slice(0, 4); // First 4 services
+  const secondRow = services.slice(4, 7); // Next 3 services
+  const thirdRow = services.slice(7, 11); // Last 4 services
+
   return (
     <div className="py-16 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
@@ -86,22 +91,51 @@ const ServiceGrid = () => {
           </p>
         </div>
 
-        {/* Grid Layout */}
-        <div className="grid grid-cols-4 gap-6">
-          {services.map((service, index) => (
-            <ServiceCard
-              key={index}
-              title={service.title}
-              description={service.description}
-              image={service.image}
-              isActive={index === 1} // Highlight the second card (Cloud Services)
-            />
-          ))}
+        {/* Custom Grid Layout */}
+        <div className="space-y-6">
+          {/* First Row: 4 Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            {firstRow.map((service, index) => (
+              <ServiceCard
+                key={index}
+                title={service.title}
+                description={service.description}
+                image={service.image}
+                // Highlight the first card (Artificial Intelligence & Data Analytics)
+                isHighlighted={index === 0}
+              />
+            ))}
+          </div>
+
+          {/* Second Row: 3 Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {secondRow.map((service, index) => (
+              <ServiceCard
+                key={index + 4} // Offset the key to avoid duplicates
+                title={service.title}
+                description={service.description}
+                image={service.image}
+                isHighlighted={false}
+              />
+            ))}
+          </div>
+
+          {/* Third Row: 4 Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            {thirdRow.map((service, index) => (
+              <ServiceCard
+                key={index + 7} // Offset the key to avoid duplicates
+                title={service.title}
+                description={service.description}
+                image={service.image}
+              />
+            ))}
+          </div>
         </div>
 
         {/* See All Services Button */}
         <div className="text-center mt-12">
-          <button className="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition">
+          <button className="text-white px-8 py-3 rounded-full font-semibold bg-[#3754A1] hover:bg-blue-700 transition">
             See All Services
             <svg
               className="w-5 h-5 inline-block ml-2"

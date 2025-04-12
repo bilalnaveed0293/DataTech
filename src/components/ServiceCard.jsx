@@ -3,13 +3,13 @@ import React from 'react';
 const ServiceCard = ({ title, description, image, isActive = false }) => {
   return (
     <div 
-      className={`p-6 rounded-lg shadow-md flex flex-col justify-between h-full 
-        ${isActive ? 'bg-blue-600 text-white' : 'bg-white text-gray-800'}
+      className={`p-6 rounded-lg shadow-md flex  flex-col justify-between h-full hover:bg-[#3754A1] hover:text-white 
+        bg-[#ECF2FC]
       `}
     >
       <div className="flex justify-between items-start mb-4">
         <div className="w-10 h-10">
-          <img src={image} alt={title} className="w-full h-full object-contain" />
+          <img src={image} alt={title} className="w-full h-full object-contain hover:text-white" />
         </div>
         {isActive && (
           <svg
@@ -30,13 +30,13 @@ const ServiceCard = ({ title, description, image, isActive = false }) => {
       </div>
       <div>
         <h3 className="text-lg font-semibold mb-2">{title}</h3>
-        <p className={`text-sm ${isActive ? 'text-white/80' : 'text-gray-600'}`}>
+        <p className={`text-sm 'hover:text-white/80' `}>
           {description}
         </p>
       </div>
       {!isActive && (
-        <div className="mt-4 text-right">
-          <span className="text-blue-600 hover:text-blue-700 font-semibold">
+        <div className="mt-4 text-right hover:text-white">
+          <span className="text-[#3754A1 font-semibold">
             Learn More &gt;
           </span>
         </div>
