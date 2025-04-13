@@ -32,7 +32,7 @@ const Banner = () => {
                                 key={index} 
                                 src={logo.src} 
                                 alt={logo.alt} 
-                                className="h-20 w-30"
+                                className="h-20 w-28"
                             />
                         ))}
                     </div>

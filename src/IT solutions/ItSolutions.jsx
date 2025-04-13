@@ -8,16 +8,16 @@ import git from "../assets/git.png";
 import shop from "../assets/shop.png";
 import gd from "../assets/gd.png";
 import hub from "../assets/hs.png";
-import oracle from "../assets/oracle.png";
+import oracle1 from "../assets/oracle1.png";
 import python from "../assets/py.png";
-import aws from "../assets/aws.png"; // You'll need to add this asset
+import aws1 from "../assets/aws1.png"; // You'll need to add this asset
 import datatech from "../assets/datatech logo.png"; // You'll need to add this asset
 
 const TechIntegrationShowcase = () => {
   const integrations = [
     { name: "SAP", logo: sap, position: "left-[12%] top-[30%]" },
     { name: "Microsoft", logo: micro, position: "left-[28%] top-[18%]" },
-    { name: "AWS", logo: aws, position: "left-[37%] top-[25%]" },
+    { name: "AWS", logo: aws1, position: "left-[37%] top-[25%]" },
     { name: "GitHub", logo: git, position: "left-[60%] top-[15%]" },
     { name: "Shopify", logo: shop, position: "left-[70%] top-[20%]" },
     { name: "Notion", logo: notion, position: "left-[83%] top-[18%]" },
@@ -25,7 +25,7 @@ const TechIntegrationShowcase = () => {
     { name: "Google Drive", logo: gd, position: "left-[22%] top-[50%]" },
     { name: "ReactJS", logo: react1, position: "left-[45%] top-[50%]" },
     { name: "HubSpot", logo: hub, position: "left-[60%] top-[50%]" },
-    { name: "Oracle", logo: oracle, position: "left-[65%] top-[35%]" },
+    { name: "Oracle", logo: oracle1, position: "left-[65%] top-[35%]" },
     { name: "Python", logo: python, position: "left-[75%] top-[50%]" },
     ];
 

@@ -8,9 +8,9 @@ import git from "../assets/git.png";
 import shop from "../assets/shop.png";
 import gd from "../assets/gd.png";
 import hub from "../assets/hs.png";
-import oracle from "../assets/oracle.png";
+import oracle from "../assets/oracle1.png";
 import python from "../assets/py.png";
-import aws from "../assets/aws.png";
+import aws from "../assets/aws1.png";
 import datatechLogo from "../assets/datatech logo.png";
 
 const TechIntegrationShowcase = () => {
