@@ -51,7 +51,7 @@ const Testimonials = () => {
       <div className="max-w-6xl mx-auto px-4">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <p className="text-blue-600 font-medium text-xs tracking-wider mb-2">
+          <p className="text-[#3754A1] font-medium text-xs tracking-wider mb-2">
             <span className="text-blue-400 mx-1">⋆</span> 
             OUR FEEDBACK 
             <span className="text-blue-400 mx-1">⋆</span>

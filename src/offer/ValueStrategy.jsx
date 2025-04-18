@@ -31,14 +31,14 @@ const ValueStrategy = () => {
       </div>
 
       {/* Main content */}
-      <div className="w-full max-w-4xl flex flex-col md:flex-row gap-8 px-4">
+      <div className="w-full max-w-4xl flex flex-col md:flex-row gap-8 px-4 ">
         {/* Menu section */}
         <div className="md:w-1/3">
           <div className="flex flex-col space-y-3">
             {menuItems.map((item) => (
               <button
                 key={item}
-                className={`p-2 text-left rounded transition-all duration-300 flex justify-between items-center ${
+                className={`p-2 text-left rounded transition-all duration-300 flex justify-between items-center cursor-pointer ${
                   activeItem === item 
                     ? 'bg-white text-gray-800 hover:bg-[#3754A1] hover:text-white' 
                     : 'bg-white text-gray-800 hover:bg-[#3754A1] hover:text-white'
@@ -115,13 +115,13 @@ const ValueStrategy = () => {
 
       {/* Footer CTA */}
       <div className="w-lg max-w-6xl mt-12 flex flex-col md:flex-row justify-center gap-4">
-        <button className="bg-[#3754A1] text-white  px-3 rounded-lg flex items-center cursor-pointer text-xs justify-center gap-2">
+        <button className="hover:bg-[#3754A1] hover:text-white text-gray-700 bg-transparent border border-gray-300 px-3 rounded-lg flex items-center cursor-pointer text-xs justify-center gap-2">
           Get a Free Quote
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentcolor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         </button>
-        <button className="border border-gray-300 text-gray-700 py-3 px-6 rounded flex items-center justify-center gap-2 text-xs">
+        <button className="border hover:text-white  border-gray-300 hover:bg-[#3754A1] cursor-pointer text-gray-700 py-3 px-6 rounded flex items-center justify-center gap-2 text-xs">
           <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
             <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>

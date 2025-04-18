@@ -53,7 +53,7 @@ const Hero = () => {
                     <div className="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-3 md:space-x-4 lg:space-x-6">
                         <a
                             href="#"
-                            className="bg-[#3754A1] text-white px-3 py-2 sm:px-4 sm:py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-full hover:bg-[#2e468a] transition duration-300 flex items-center text-xs sm:text-sm md:text-base lg:text-lg"
+                            className="hover:bg-[#3754A1] hover:text-white px-3 py-2 sm:px-4 sm:py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-full bg-transparent transition duration-300 flex items-center text-xs sm:text-sm md:text-base lg:text-lg border border-gray-300"
                         >
                             Get Started
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 lg:h-6 lg:w-6 ml-1 sm:ml-2" viewBox="0 0 20 20" fill="currentColor">
@@ -62,7 +62,7 @@ const Hero = () => {
                         </a>
                         <a
                             href="#"
-                            className="bg-gray-200 text-gray-800 px-3 py-2 sm:px-4 sm:py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-full hover:bg-gray-300 transition duration-300 text-xs sm:text-sm md:text-base lg:text-lg"
+                            className="text-gray-900 bg-transparent  px-3 py-2 sm:px-4 sm:py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-full transition duration-300 text-xs sm:text-sm md:text-base lg:text-lg border border-gray-300 hover:bg-[#3754A1] hover:text-white"
                         >
                             Explore as You Go
                         </a>

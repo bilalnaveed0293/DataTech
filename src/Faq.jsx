@@ -39,7 +39,7 @@ const Faq = () => {
         <div className="flex flex-col gap-2">
           {firstColumnFaqs.map((faq, index) => (
             <div key={`col1-${index}`} className="bg-white shadow-md rounded-lg transition-all duration-300">
-              <button className="w-full text-left flex justify-between items-center p-3.5 font-semibold text-gray-900 focus:outline-none" onClick={() => toggleFAQ(`col1-${index}`)}>
+              <button className="w-full text-left cursor-pointer flex justify-between items-center p-3.5 font-semibold text-gray-900 focus:outline-none" onClick={() => toggleFAQ(`col1-${index}`)}>
                 <span dangerouslySetInnerHTML={{ __html: faq.question }} />
                 <span className="text-xs font-bold">{openItems[`col1-${index}`] ? "▲" : "▼"}</span>
               </button>
@@ -54,8 +54,8 @@ const Faq = () => {
 
         <div className="flex flex-col gap-2">
           {secondColumnFaqs.map((faq, index) => (
-            <div key={`col2-${index}`} className="bg-white shadow-md rounded-lg transition-all duration-300">
-              <button className="w-full text-left flex justify-between items-center p-3.5 font-semibold text-gray-900 focus:outline-none" onClick={() => toggleFAQ(`col2-${index}`)}>
+            <div key={`col2-${index}`} className="bg-white shadow-md rounded-lg transition-all duration-300 ">
+              <button className=" cursor-pointer w-full text-left flex justify-between items-center p-3.5 font-semibold text-gray-900 focus:outline-none" onClick={() => toggleFAQ(`col2-${index}`)}>
                 <span dangerouslySetInnerHTML={{ __html: faq.question }} />
                 <span className="text-xs">{openItems[`col2-${index}`] ? "▲" : "▼"}</span>
               </button>

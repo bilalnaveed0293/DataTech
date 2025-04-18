@@ -84,7 +84,7 @@ const NumbersBanner = () => {
             <h2 className="text-3xl md:text-4xl font-semibold text-white max-w-md">
               Numbers Speaking for Themselves
             </h2>
-            <button className="hidden md:flex items-center gap-2 border border-white/30 text-white px-6 py-3 rounded-md hover:bg-white/10 transition-colors">
+            <button className="hidden md:flex items-center gap-2 border cursor-pointer border-white/30 text-white px-6 py-3 rounded-md hover:bg-white/10 transition-colors">
               Get a Quote
               <svg 
                 width="16" 
