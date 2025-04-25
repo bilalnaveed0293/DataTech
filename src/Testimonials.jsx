@@ -63,7 +63,7 @@ const Testimonials = () => {
         </div>
 
         {/* Testimonials Container - Flexbox */}
-        <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-4 mb-12">
+        <div className="flex flex-col md:flex-row border-double justify-center items-center space-y-6 md:space-y-0 md:space-x-4 mb-12">
           {testimonials.slice(currentIndex, currentIndex + 2).map((testimonial) => (
             <div 
               key={testimonial.id}

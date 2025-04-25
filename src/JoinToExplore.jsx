@@ -95,10 +95,10 @@ const JoinToExplore = () => {
                                     <div>
                                         <h3 className="text-lg font-semibold mb-4">Our Company</h3>
                                         <ul className="space-y-2 text-xs">
-                                            <li><a href="#" className="text-gray-600 hover:text-blue-500">About Us</a></li>
-                                            <li><a href="#" className="text-gray-600 hover:text-blue-500">Leadership Team</a></li>
-                                            <li><a href="#" className="text-gray-600 hover:text-blue-500">Careers</a></li>
-                                            <li><a href="#" className="text-gray-600 hover:text-blue-500">Press</a></li>
+                                            <li><a href="#" className="text-gray-600 hover:text-[#3754A1]">About Us</a></li>
+                                            <li><a href="#" className="text-gray-600 hover:text-[#3754A1]">Leadership Team</a></li>
+                                            <li><a href="#" className="text-gray-600 hover:text-[#3754A1]">Careers</a></li>
+                                            <li><a href="#" className="text-gray-600 hover:text-[#3754A1]">Press</a></li>
                                         </ul>
                                     </div>
 
@@ -106,11 +106,11 @@ const JoinToExplore = () => {
                                     <div>
                                         <h3 className="text-lg font-semibold mb-4">Resources</h3>
                                         <ul className="space-y-2 text-xs">
-                                            <li><a href="#" className="text-gray-600 hover:text-blue-500">Blog</a></li>
-                                            <li><a href="#" className="text-gray-600 hover:text-blue-500">Events</a></li>
-                                            <li><a href="#" className="text-gray-600 hover:text-blue-500">Support Center</a></li>
-                                            <li><a href="#" className="text-gray-600 hover:text-blue-500">Get Demo</a></li>
-                                            <li><a href="#" className="text-gray-600 hover:text-blue-500">Community Forums</a></li>
+                                            <li><a href="#" className="text-gray-600 hover:text-[#3754A1]">Blog</a></li>
+                                            <li><a href="#" className="text-gray-600 hover:text-[#3754A1]">Events</a></li>
+                                            <li><a href="#" className="text-gray-600 hover:text-[#3754A1]">Support Center</a></li>
+                                            <li><a href="#" className="text-gray-600 hover:text-[#3754A1]">Get Demo</a></li>
+                                            <li><a href="#" className="text-gray-600 hover:text-[#3754A1]">Community Forums</a></li>
                                         </ul>
                                     </div>
                                 </div>
