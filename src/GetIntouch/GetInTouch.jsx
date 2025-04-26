@@ -6,9 +6,9 @@ const GetInTouch = () => {
         <div className="py-8 bg-white max-w-6xl mx-auto">
             {/* Header Section */}
             <div className="text-center mb-10">
-                <h2 className="text-3xl font-bold mb-2 text-gray-900">Get in touch</h2>
+                <h2 className="text-3xl font-bold mb-2 text-gray-900">Let’s Build Your Future Together</h2>
                 <p className="text-base text-gray-500">
-                    We'd love to hear from you. Please fill out this form.
+                We’re here to simplify your business and help you take control of your financial future.
                 </p>
             </div>
             
@@ -74,6 +74,17 @@ const GetInTouch = () => {
                         </div>
                     </div>
                     
+                    <div className="mb-3">
+                        <label htmlFor="service" className="block text-sm font-small text-gray-700 mb-2">
+                            Service you are interested in
+                        </label>
+                        <input
+                            id="service"
+                            type="service"
+                            placeholder="IT"
+                            className="w-full px-2 py-2 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 text-xs"
+                        />
+                    </div>
                     {/* Message Field */}
                     <div className="mb-3">
                         <label htmlFor="message" className="block text-sm font-small text-gray-700 mb-2">

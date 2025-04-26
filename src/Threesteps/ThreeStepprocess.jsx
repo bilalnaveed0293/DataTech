@@ -9,19 +9,19 @@ const ThreeStepProcess = () => {
     {
       number: '01',
       title: 'Eligibility',
-      description: 'We assess whether you meet the requirements for our service.',
+      description: "We evaluate your profile and business model to ensure you're qualified for our UAE-based solutions.",
       img: first,
     },
     {
       number: '02',
       title: 'Agreement',
-      description: 'Complete a legally binding contract to safeguard your confidentiality and ensure a seamless process.',
+      description: "A transparent, compliant agreement secures your path forward with confidence.",
       img: second,
     },
     {
       number: '03',
       title: 'Work Permit',
-      description: 'We take care of all the required paperwork to ensure your legal entry and work eligibility in the UAE.',
+      description: "We manage the full visa and work permit process — setting you up for success in the UAE and beyond.",
      img: third,
     },
   ];

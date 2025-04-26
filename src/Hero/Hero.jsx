@@ -12,8 +12,8 @@ const Hero = () => {
                     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-gray-900 leading-tight">
                         Maximize Your Take-Home Earnings With <span className="text-[#3754A1]">Data Tech</span>
                     </h1>
-                    <p className="text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl text-[#3754A1] mb-6 sm:mb-8 md:mb-10 max-w-[16rem] sm:max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg 2xl:max-w-xl mx-auto mt-3 sm:mt-4 md:mt-5">
-                        Optimize your financial life, increase your earnings, and access global possibilities.
+                    <p className="text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-lg text-[#3754A1] mb-6 sm:mb-8 md:mb-10 max-w-[16rem] sm:max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg 2xl:max-w-xl mx-auto mt-3 sm:mt-4 md:mt-5">
+                    Operate globally without setting up a company. Legally invoice clients, access UAE residency, and pay zero personal income tax — all with Data Tech.
                     </p>
                     <div className="bg-white rounded-full px-3 py-2 sm:px-4 sm:py-3 md:px-6 md:py-4 inline-flex flex-col sm:flex-row shadow-md text-[10px] sm:text-xs md:text-sm lg:text-base space-y-2 sm:space-y-0 sm:space-x-2 md:space-x-3 lg:space-x-4 mb-6 sm:mb-8 md:mb-10">
                         <div className="flex items-center text-[#7C828D]">

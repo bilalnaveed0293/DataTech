@@ -12,97 +12,178 @@ import oracle from "../assets/oracle1.png";
 import python from "../assets/py.png";
 import aws from "../assets/aws1.png";
 import datatechLogo from "../assets/datatech logo.png";
-// Import OpenAI logo
-import openai from "../assets/openai.png"; 
+import openai from "../assets/openai.png";
 
 const TechIntegrationShowcase = () => {
-  const integrations = [
-    { name: "SAP", logo: sap, position: "left-[12%] top-[10%]" },
-    { name: "Microsoft", logo: micro, position: "left-[30%] top-[10%]" },
-    { name: "AWS", logo: aws, position: "left-[45%] top-[10%]" },
-    { name: "OpenAI", logo: openai, position: "left-[55%] top-[25%]" }, // Added OpenAI
-    { name: "GitHub", logo: git, position: "left-[63%] top-[10%]" },
-    { name: "Shopify", logo: shop, position: "left-[78%] top-[10%]" },
-    { name: "Notion", logo: notion, position: "left-[90%] top-[10%]" },
-    { name: "Google Drive", logo: gd, position: "left-[21%] top-[35%]" },
-    { name: "TensorFlow", logo: tf, position: "left-[35%] top-[25%]" },
-    { name: "ReactJS", logo: react1, position: "left-[52%] top-[35%]" },
-    { name: "HubSpot", logo: hub, position: "left-[65%] top-[35%]" },
-    { name: "Oracle", logo: oracle, position: "left-[75%] top-[30%]" },
-    { name: "Python", logo: python, position: "left-[86%] top-[35%]" },
+  // Define tech logos with their positions
+  const techLogos = [
+    { name: "SAP", logo: sap, left: "12%", top: "10%" },
+    { name: "Microsoft", logo: micro, left: "30%", top: "10%" },
+    { name: "AWS", logo: aws, left: "45%", top: "10%" },
+    { name: "OpenAI", logo: openai, left: "55%", top: "25%" },
+    { name: "GitHub", logo: git, left: "63%", top: "10%" },
+    { name: "Shopify", logo: shop, left: "78%", top: "10%" },
+    { name: "Notion", logo: notion, left: "90%", top: "10%" },
+    { name: "Google Drive", logo: gd, left: "21%", top: "35%" },
+    { name: "TensorFlow", logo: tf, left: "35%", top: "25%" },
+    { name: "ReactJS", logo: react1, left: "52%", top: "35%" },
+    { name: "HubSpot", logo: hub, left: "65%", top: "35%" },
+    { name: "Oracle", logo: oracle, left: "75%", top: "30%" },
+    { name: "Python", logo: python, left: "86%", top: "35%" },
   ];
 
-  // Define the starting point (Datatech logo center)
-  const datatechCenter = { x: 50, y: 100 }; // left: 50%, bottom: 0px (relative to the top section height)
-
-  // Define endpoints for each tech logo (bottom center of each logo, including the dot)
-  const techEndpoints = integrations.map((item) => {
-    const leftMatch = item.position.match(/left-\[(\d+)%\]/);
-    const topMatch = item.position.match(/top-\[(\d+)%\]/);
-    const left = parseInt(leftMatch ? leftMatch[1] : 0);
-    const top = parseInt(topMatch ? topMatch[1] : 0);
-    // Logo height + dot + margin
-    const yOffset = top + 15; // Reduced offset for more compact layout
-    return { x: left, y: yOffset };
-  });
-
-  // Generate a straight vertical line path from each tech logo to Datatech logo
-  const generateVerticalPath = (endPoint) => {
-    const start = datatechCenter;
-    const end = endPoint;
-    
-    // Create a direct vertical path with minimal curve
-    return `M ${end.x}% ${end.y}% L ${end.x}% ${Math.min(end.y + 40, start.y - 10)}% 
-            Q ${end.x}% ${start.y - 5}, ${start.x}% ${start.y}%`;
-  };
-
   return (
-    <div className="relative w-full">
-      {/* Top section with logos */}
-      <div className="relative bg-gray-50 w-full h-[300px]"> {/* Reduced height for more compact layout */}
-        {/* Vertical lines from each tech logo to Datatech */}
-        <svg className="absolute top-0 left-0 w-full h-full" preserveAspectRatio="none">
-          {techEndpoints.map((endPoint, index) => (
-            <path
-              key={index}
-              d={generateVerticalPath(endPoint)}
-              fill="none"
-              stroke="#3b82f6"
-              strokeWidth="2"
-            />
-          ))}
-        </svg>
+    <div className="relative w-full overflow-hidden">
+      {/* Top white section with logos and vertical lines */}
+      <div className="relative bg-white w-full" style={{ height: "320px" }}>
+        {/* Vertical lines that extend through both sections */}
+        {techLogos.map((item, index) => (
+          <div
+            key={`line-${index}`}
+            style={{
+              position: "absolute",
+              left: item.left,
+              top: `calc(${item.top} + 28px)`,
+              width: "1px",
+              height: "400px", // Extra long to extend into dark section
+              backgroundColor: "#E5E7EB", // Very light gray
+              transform: "translateX(-50%)",
+              zIndex: 1
+            }}
+          />
+        ))}
 
-        {/* Logo items */}
-        {integrations.map((item, index) => (
-          <div key={index} className={`absolute flex flex-col items-center ${item.position}`}>
-            <div className="bg-white p-3 rounded-full shadow-md mb-1 w-14 h-14 flex items-center justify-center">
+        {/* Tech logos and labels */}
+        {techLogos.map((item, index) => (
+          <div
+            key={`logo-${index}`}
+            style={{
+              position: "absolute",
+              left: item.left,
+              top: item.top,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              transform: "translateX(-50%)",
+              zIndex: 3
+            }}
+          >
+            <div style={{
+              backgroundColor: "white",
+              padding: "12px",
+              borderRadius: "9999px",
+              boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+              marginBottom: "4px",
+              width: "56px",
+              height: "56px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center"
+            }}>
               <img
                 src={item.logo}
                 alt={item.name}
-                className="object-contain w-8 h-8"
+                style={{
+                  objectFit: "contain",
+                  width: "32px",
+                  height: "32px"
+                }}
               />
             </div>
-            <div className="text-xs font-medium text-gray-800">{item.name}</div>
-            <div className="w-2 h-2 bg-blue-500 rounded-full mt-1"></div>
+            <div style={{
+              fontSize: "0.75rem",
+              fontWeight: "500",
+              color: "#1F2937"
+            }}>
+              {item.name}
+            </div>
+            <div style={{
+              width: "8px",
+              height: "8px",
+              backgroundColor: "#3B82F6",
+              borderRadius: "9999px",
+              marginTop: "4px"
+            }}></div>
           </div>
         ))}
 
-        {/* Datatech logo circle in the middle bottom */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 bottom-[-72px] bg-white rounded-full w-36 h-36 flex items-center justify-center shadow-lg z-10">
-          <img src={datatechLogo} alt="Datatech" className="w-28 h-auto" />
+        {/* Horizontal line that spans the width with a gap in the middle */}
+        <div style={{
+          position: "absolute",
+          bottom: "0",
+          left: "0",
+          right: "0",
+          height: "1px",
+          backgroundColor: "#111827",
+          zIndex: 2
+        }}>
+          {/* Creating the gap by overlaying a white div */}
+          <div style={{
+            position: "absolute",
+            left: "50%",
+            width: "180px",
+            height: "1px",
+            backgroundColor: "white",
+            transform: "translateX(-50%)"
+          }}></div>
         </div>
       </div>
 
-      {/* Bottom dark section */}
-      <div className="bg-gray-900 text-white py-16 px-4 text-center relative"> {/* Reduced padding */}
-        <div className="mt-16">
-          <h2 className="text-3xl font-bold mb-2"> {/* Reduced text size and margin */}
+      {/* Bottom dark navy section */}
+      <div className="relative bg-gray-900 w-full" style={{ height: "100px" }}>
+        {/* Continuation of vertical lines in the dark section */}
+        {techLogos.map((item, index) => (
+          <div
+            key={`bottom-line-${index}`}
+            style={{
+              position: "absolute",
+              left: item.left,
+              top: "0",
+              width: "1px",
+              height: "60px", // Extends partially into the dark area
+              backgroundColor: "#374151", // Slightly lighter gray for dark bg
+              transform: "translateX(-50%)",
+              zIndex: 1
+            }}
+          />
+        ))}
+
+        {/* Datatech logo circle overlapping both sections */}
+        <div style={{
+          position: "absolute",
+          left: "50%",
+          top: "-60px", // Positioned to overlap the two sections
+          width: "120px",
+          height: "120px",
+          backgroundColor: "white",
+          borderRadius: "9999px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          boxShadow: "0 10px 15px rgba(0, 0, 0, 0.1)",
+          transform: "translateX(-50%)",
+          zIndex: 10
+        }}>
+          <img 
+            src={datatechLogo} 
+            alt="Datatech" 
+            style={{
+              width: "80px",
+              height: "auto"
+            }}
+          />
+        </div>
+      </div>
+
+      {/* Main content section */}
+      <div className="bg-gray-900 text-white py-16 px-4 text-center">
+        <div className="mt-8">
+          <h2 className="text-3xl font-bold mb-2">
             Essential Connect your favorite
             <br />
             tools with datatech.
           </h2>
-          <p className="text-md text-gray-300 mb-6"> {/* Added subtitle as shown in Image 2 */}
+          <p className="text-md text-gray-300 mb-6">
             Connect your favorite tools and find new Add-Ons.
           </p>
           <button className="hover:bg-white border border-white cursor-pointer hover:text-gray-900 px-6 py-3 rounded-full font-medium flex items-center gap-2 mx-auto bg-transparent transition-colors">

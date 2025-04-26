@@ -6,21 +6,21 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      quote: "Data Tech made our free zone business setup process seamless. From the initial consultation to final approvals, their team provided expert guidance",
+      quote: "I started invoicing clients in 2 weeks — no red tape, no stress.",
       name: "Jacob Jones",
       position: "CEO, Bernard Health",
       image: p1
     },
     {
       id: 2,
-      quote: "When we approached DataTech, we were struggling with outdated IT infrastructure. They completely transformed our system with advanced cloud computing.",
+      quote: "Data Tech helped me earn more and move to the UAE — it was life-changing.",
       name: "Brooklyn Simmons",
       position: "CEO, Bernard Health",
       image: p1
     },
     {
       id: 3,
-      quote: "When we approached DataTech, we were struggling with outdated IT infrastructure. They completely transformed our system with advanced cloud computing.",
+      quote: "When we approached DataTech, we were struggling with outdated ",
       name: "Alex Rivera",
       position: "CFO, Global Systems",
       image: p1
@@ -56,10 +56,8 @@ const Testimonials = () => {
             OUR FEEDBACK 
             <span className="text-blue-400 mx-1">⋆</span>
           </p>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Check what these clients have to say</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Our <span className="font-semibold">WORK</span> speaks louder than our <span className="font-semibold">WORD</span>. Find out how we helped clients overcome challenges and succeed.
-          </p>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Real Stories, Real Success
+          </h2>
         </div>
 
         {/* Testimonials Container - Flexbox */}

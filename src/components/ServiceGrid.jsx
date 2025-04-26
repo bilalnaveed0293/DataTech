@@ -120,10 +120,10 @@ const ServiceGrid = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
-            Exploring IT Services
+          Power Your Business with Smart, Scalable Tech Solutions
           </h2>
           <p className="text-gray-600 text-lg">
-            What You Gain: Full Control Over What Belongs to You.
+          Unlock the full benefits of global finance, exclusive banking, and smart tech — with Data Tech.
           </p>
         </div>
 

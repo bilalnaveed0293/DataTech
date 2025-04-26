@@ -17,11 +17,16 @@ import Testimonials from './Testimonials'
 import JoinToExplore from './JoinToExplore'
 import BenefitsSection from './Benifits/BenifitsSection'
 import TechIntegrationShowcase from './techint/TechIntegrationShowcase'
+import IdealClients from './Ideal Clients/IdealClients'
+import WhyChooseDataTech from './Why DT/WhyChooseDataTech'
+import KeyAdvantages from './Adv/KeyAdvantages'
+import WhatIsDataTech from './Hero/WhatIsDataTech'
 function App() {
   return(
     <div>
       <Navbar/>
       <Hero/>
+      <WhatIsDataTech/>
       <FeaturesSection/>
       <GetInTouch/>
       <Banner/>
@@ -29,10 +34,14 @@ function App() {
       <ValueStrategy/>
       <NumbersBanner/>
       <ThreeStepProcess/>
+      <ItSolutions/>
       <BenefitsSection/>
       <TechIntegrationShowcase/>
       <Testimonials/>
       <Faq/>
+      <IdealClients/>
+      <WhyChooseDataTech/>
+      <KeyAdvantages/>
       <JoinToExplore/>
     </div>
   )
