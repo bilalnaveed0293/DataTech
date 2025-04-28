@@ -28,21 +28,21 @@ function App() {
       <Hero/>
       <WhatIsDataTech/>
       <FeaturesSection/>
-      <GetInTouch/>
+      <ThreeStepProcess/>
+      {/* <GetInTouch/> */}
       <Banner/>
       <ServiceGrid/>
-      <ValueStrategy/>
-      <NumbersBanner/>
-      <ThreeStepProcess/>
-      <ItSolutions/>
       <WhyChooseDataTech/>
-      <BenefitsSection/>
-      <IdealClients/>
-      <KeyAdvantages/>
+      {/* <ValueStrategy/> */}
+      {/* <NumbersBanner/> */}
+      {/* <ItSolutions/> */}
+      {/* <BenefitsSection/> */}
+      {/* <IdealClients/> */}
+      {/* <KeyAdvantages/> */}
       <TechIntegrationShowcase/>
       <Testimonials/>
       <Faq/>
-    
+      <GetInTouch/>
       <JoinToExplore/>
     </div>
   )
