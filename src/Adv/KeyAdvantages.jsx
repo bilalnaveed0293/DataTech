@@ -42,7 +42,7 @@ const KeyAdvantages = () => {
             <p className="text-lg text-gray-700 mb-4">
               Ready to transform your business operations?
             </p>
-            <button className="bg-[#3754A1] hover:bg-blue-800 text-white font-semibold py-3 px-8 rounded-md transition duration-300 shadow-md">
+            <button className="bg-[#3754A1] hover:bg-white cursor-pointer hover:text-black text-white font-semibold py-3 px-8 rounded-md transition duration-300 shadow-md">
               Get Started Today
             </button>
           </div>

@@ -35,13 +35,14 @@ function App() {
       <NumbersBanner/>
       <ThreeStepProcess/>
       <ItSolutions/>
+      <WhyChooseDataTech/>
       <BenefitsSection/>
+      <IdealClients/>
+      <KeyAdvantages/>
       <TechIntegrationShowcase/>
       <Testimonials/>
       <Faq/>
-      <IdealClients/>
-      <WhyChooseDataTech/>
-      <KeyAdvantages/>
+    
       <JoinToExplore/>
     </div>
   )

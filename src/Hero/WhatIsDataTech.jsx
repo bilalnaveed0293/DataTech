@@ -20,7 +20,7 @@ const WhatIsDataTech = () => {
             immediately — no licenses, office rentals, VAT returns, or annual reports required.
           </p>
           
-          <button className="bg-[#3754A1] hover:bg-blue-800 text-white font-medium py-3 px-8 rounded-md transition duration-300 shadow-md">
+          <button className="bg-[#3754A1] hover:bg-white cursor-pointer hover:text-black text-white font-medium py-3 px-8 rounded-md transition duration-300 shadow-md">
             Learn More About Our Solution
           </button>
         </div>
