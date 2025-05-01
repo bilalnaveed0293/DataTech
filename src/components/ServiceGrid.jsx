@@ -18,14 +18,16 @@ import artificialIntelligence from '../assets/aiblue.png';
 import cloudIt from '../assets/cloudblue.png';
 import appDevelopment from '../assets/appdevblue.png';
 import eCommerce from '../assets/ecomblue.png';
-import businessManagement from '../assets/businessmanagement.png';
+import bmblue from '../assets/bmblue.png';
+import bmwhite from '../assets/bmwhite.png';
 import crmHr from '../assets/hrblue.png';
 import digitalMarketing from '../assets/digmarkblue.png';
 import eLearning from '../assets/elearnblue.png';
 import enterpriseConnectivity from '../assets/econblue.png';
-import logisticsSupport from '../assets/logisticsupport.png';
-import itExpertise from '../assets/itexp.png';
-
+import logblue from '../assets/logblue.png';
+import logwhite from '../assets/logwhite.png';
+import itblue from '../assets/itblue.png';
+import itwhite from '../assets/itwhite.png';
 const services = [
   {
     title: 'Artificial Intelligence & Data Analytics',
@@ -54,8 +56,8 @@ const services = [
   {
     title: 'Business Management',
     description: 'Streamlining operations, BPO, project management.',
-    blueImage: businessManagement,
-    whiteImage: businessManagement1,
+    blueImage: bmblue,
+    whiteImage: bmwhite,
   },
   {
     title: 'CRM & HR',
@@ -84,14 +86,14 @@ const services = [
   {
     title: 'Logistics Support',
     description: 'Optimizing supply chain, package tracking, delivery.',
-    blueImage: logisticsSupport,
-    whiteImage: logisticsSupport1,
+    blueImage: logblue,
+    whiteImage: logwhite
   },
   {
     title: 'IT Expertise',
     description: 'Niche IT services, technologies, and innovations.',
-    blueImage: itExpertise,
-    whiteImage: itExpertise1,
+    blueImage: itblue,
+    whiteImage: itwhite,
   },
 ];
 
