@@ -35,6 +35,25 @@ const ThreeStepProcess2 = () => {
 
   return (
     <div className="bg-gray-100 py-16 px-4">
+      <div className="text-center mb-2">
+        <span className="text-lg text-[#4A2B2B] font-medium py-1 px-4 rounded-full bg-[#ECF2FC] inline-flex items-center gap-2">
+          <span className="w-1 h-1 bg-[#110834] rounded-full"></span>
+          HOW IT GOES?
+        </span>
+      </div>
+
+      {/* Header */}
+      <div className="text-center mb-4">
+        <h2 className="text-6xl font-medium text-gray-800">Our 3 Step Process</h2>
+      </div>
+
+      {/* Subheader */}
+      <div className="text-center mb-16 max-w-xs mx-auto">
+        <p className="text-gray-600 font-medium text-xs">
+          Seamless IT transformation with DataTech—efficient, secure,
+          and built to scale. Explore our 6-step process today
+        </p>
+      </div>
       <div className="max-w-5xl mx-auto">
         {steps.map((step, index) => (
           <div

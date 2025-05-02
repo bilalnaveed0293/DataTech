@@ -4,6 +4,7 @@ import bpersonImage from '../assets/3stepman.png'; // Adjust the path to your im
 import first from '../assets/31.png'; // Adjust the path to your image
 import second from '../assets/32.png'; // Adjust the path to your image
 import third from '../assets/33.png'; // Adjust the path to your image
+
 const ThreeStepProcess = () => {
   const steps = [
     {
@@ -22,7 +23,7 @@ const ThreeStepProcess = () => {
       number: '03',
       title: 'Work Permit',
       description: "We manage the full visa and work permit process — setting you up for success in the UAE and beyond.",
-     img: third,
+      img: third,
     },
   ];
 
@@ -30,7 +31,7 @@ const ThreeStepProcess = () => {
     <div className="py-16 px-4 bg-gray-50">
       {/* HOW IT GOES? Label */}
       <div className="text-center mb-2">
-        <span className="text-sm text-[#4A2B2B] font-medium py-1 px-4 rounded-full bg-[#ECF2FC]inline-flex items-center gap-2">
+        <span className="text-sm text-[#4A2B2B] font-medium py-1 px-4 rounded-full bg-[#ECF2FC] inline-flex items-center gap-2">
           <span className="w-1 h-1 bg-[#110834] rounded-full"></span>
           HOW IT GOES?
         </span>
@@ -62,7 +63,7 @@ const ThreeStepProcess = () => {
           </div>
 
           {/* Overlay with gradient */}
-          <div className="absolute inset-0 bg-gradient-to-r  from-blue-800/60">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-800/60">
             <img
               src={businessPersonImage}
               alt="Business Professional"
@@ -76,8 +77,8 @@ const ThreeStepProcess = () => {
               {steps.map((step, index) => (
                 <div key={index} className="flex items-start gap-4">
                   {/* Icon */}
-                  <div className=" p-2 rounded-lg w-14 h-14 flex-shrink-0 flex items-center justify-center">
-                    <img src={step.img} alt="" srcset="" />
+                  <div className="p-2 rounded-lg w-14 h-14 flex-shrink-0 flex items-center justify-center">
+                    <img src={step.img} alt="" />
                   </div>
 
                   {/* Step content */}
@@ -93,10 +94,10 @@ const ThreeStepProcess = () => {
               ))}
             </div>
           </div>
-          
+
           {/* Explore as you Go button */}
           <div className="absolute bottom-6 right-6">
-            <button className="bg-[#3754A1] text-white px-4 py-2 rounded flex items-center gap-2 text-sm cursor-pointer" >
+            <button className="bg-[#3754A1] text-white px-4 py-2 rounded flex items-center gap-2 text-sm cursor-pointer">
               Explore as you Go
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 12h14"></path>
