@@ -11,7 +11,7 @@ const Hero = () => {
     return (
         <>
             <section
-                className="relative bg-cover bg-center min-h-[20rem] sm:min-h-[24rem] md:min-h-[28rem] lg:min-h-[32rem] xl:min-h-[40rem] 2xl:min-h-[48rem] flex flex-col items-center justify-center text-center px-4 sm:px-6 md:px-8 mt-8 sm:mt-10 md:mt-12 mb-12 sm:mb-20 md:mb-30"
+                className="relative bg-cover bg-center min-h-[20rem] sm:min-h-[24rem] md:min-h-[28rem] lg:min-h-[32rem] xl:min-h-[40rem] 2xl:min-h-[40rem] flex flex-col items-center justify-center text-center px-4 sm:px-6 md:px-8 mt-2 sm:mt-4 md:mt-6 mb-12 sm:mb-20 md:mb-30"
             >
                 <div className="container mx-auto w-full max-w-[90%] sm:max-w-[85%] md:max-w-2xl lg:max-w-3xl xl:max-w-5xl 2xl:max-w-6xl relative z-10 mb-4 sm:mb-5 md:mb-6">
                     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-gray-900 leading-tight mb-4 sm:mb-5 md:mb-6">

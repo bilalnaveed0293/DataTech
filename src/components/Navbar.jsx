@@ -3,7 +3,7 @@ import logo from "../assets/datatech logo.png"
 
 const Navbar = () => {
     return (
-        <header className='bg-white shadow mb-3'>
+        <header className='bg-white shadow'>
             <div className="container mx-auto flex justify-between items-center py-2">
                 <img
                     src={logo}
