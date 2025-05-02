@@ -104,7 +104,7 @@ const Hero = () => {
                     <img
                         src={cityimg}
                         alt="City Skyline"
-                        className="w-[62rem] rounded-xl max-w-[95%] sm:max-w-[90%] md:max-w-[85%] lg:max-w-[80%] xl:max-w-[75%] 2xl:max-w-[70%] object-cover"
+                        className="w-[54rem] rounded-xl max-w-[95%] sm:max-w-[90%] md:max-w-[85%] lg:max-w-[80%] xl:max-w-[75%] 2xl:max-w-[70%] object-cover"
                     />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 h-6 sm:h-8 md:h-10 lg:h-12 xl:h-16 2xl:h-20 bg-stone-800 opacity-50" />
