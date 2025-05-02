@@ -1,7 +1,10 @@
 import fpic1 from "../assets/fpic1.png" // Update with the actual path to your vector image
 import fpic2 from "../assets/fpic2.png" // Update with the actual path to your vector image
 import fpic3 from "../assets/fpic3.png" // Update with the actual path to your vector image
-
+import tax from "../assets/tax.png" // Update with the actual path to your vector image
+import empire from "../assets/empire.png" // Update with the actual path to your vector image
+import hexagon from "../assets/hexagon.png" // Update with the actual path to your vector image
+import coin from "../assets/coin.png" // Update with the actual path to your vector image
 const FeaturesSection = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
@@ -10,10 +13,11 @@ const FeaturesSection = () => {
         {/* Left side - Text */}
         <div className="max-w-lg">
           <div className="inline-block bg-[#CFDFFF] text-[#3754A1] px-4 py-1 rounded-full text-sm font-medium mb-4">
-           ••• OUR FEATURES
+            ••• OUR FEATURES
           </div>
           <h2 className="text-4xl font-normal text-gray-900 mb-2">
-            Together, we are creating a <span className="block font-bold">Bright Future.</span>
+            From  <span className="block font-bold">Heavy Rates.</span> to
+            <span className="block font-bold">Open Gates.</span>
           </h2>
           <p className="text-2xl text-[#3754A1] font-medium">Join us.</p>
         </div>
@@ -48,15 +52,11 @@ const FeaturesSection = () => {
         {/* Feature 1 */}
         <div className="flex flex-col">
           <div className="bg-blue-50 p-3 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
-            <svg className="w-6 h-6 text-[#3754A1]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M20 7L12 3L4 7M20 7V17L12 21M20 7L12 11M12 21L4 17V7M12 21V11M4 7L12 11"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+            <img
+              src={hexagon}// Replace with your actual image path
+              alt="Envelope Icon"
+              className="w-6 h-6"
+            />
           </div>
           <h3 className="text-lg font-semibold mb-2">Comprehensive Health Insurance</h3>
           <p className="text-gray-600 text-sm">
@@ -67,16 +67,11 @@ const FeaturesSection = () => {
         {/* Feature 2 */}
         <div className="flex flex-col">
           <div className="bg-blue-50 p-3 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
-            <svg className="w-6 h-6 text-[#3754A1]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M21 4H3C1.89543 4 1 4.89543 1 6V18C1 19.1046 1.89543 20 3 20H21C22.1046 20 23 19.1046 23 18V6C23 4.89543 22.1046 4 21 4Z"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path d="M1 10H23" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
+            <img
+             src={tax} // Replace with your actual image path
+              alt="Envelope Icon"
+              className="w-6 h-6"
+            />
           </div>
           <h3 className="text-lg font-semibold mb-2">No Personal Income Tax</h3>
           <p className="text-gray-600 text-sm">
@@ -87,22 +82,11 @@ const FeaturesSection = () => {
         {/* Feature 3 */}
         <div className="flex flex-col">
           <div className="bg-blue-50 p-3 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
-            <svg className="w-6 h-6 text-[#3754A1]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M12 6V12L16 14"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+            <img
+              src={coin} // Replace with your actual image path
+              alt="Envelope Icon"
+              className="w-6 h-6"
+            />
           </div>
           <h3 className="text-lg font-semibold mb-2">Financial Independence</h3>
           <p className="text-gray-600 text-sm">
@@ -114,15 +98,11 @@ const FeaturesSection = () => {
         {/* Feature 4 */}
         <div className="flex flex-col">
           <div className="bg-blue-50 p-3 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
-            <svg className="w-6 h-6 text-[#3754A1]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M3 21H21M3 18H21M5 18V10M19 18V10M7 10H17C17.5523 10 18 9.55228 18 9V4C18 3.44772 17.5523 3 17 3H7C6.44772 3 6 3.44772 6 4V9C6 9.55228 6.44772 10 7 10Z"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+            <img
+              src={empire}  // Replace with your actual image path
+              alt="Envelope Icon"
+              className="w-6 h-6"
+            />
           </div>
           <h3 className="text-lg font-semibold mb-2">Exclusive Banking Services</h3>
           <p className="text-gray-600 text-sm">
