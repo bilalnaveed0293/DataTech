@@ -1,6 +1,6 @@
-import fpic1 from "../assets/fpic1.png" // Update with the actual path to your vector image
-import fpic2 from "../assets/fpic2.png" // Update with the actual path to your vector image
-import fpic3 from "../assets/fpic3.png" // Update with the actual path to your vector image
+import fpic1 from "../assets/doc.jpg" // Update with the actual path to your vector image
+import fpic2 from "../assets/atm.jpg" // Update with the actual path to your vector image
+import fpic3 from "../assets/skysc.jpg" // Update with the actual path to your vector image
 import tax from "../assets/tax.png" // Update with the actual path to your vector image
 import empire from "../assets/empire.png" // Update with the actual path to your vector image
 import hexagon from "../assets/hexagon.png" // Update with the actual path to your vector image
@@ -16,9 +16,11 @@ const FeaturesSection = () => {
             ••• OUR FEATURES
           </div>
           <h2 className="text-4xl font-normal text-gray-900 mb-2">
-            From  <span className="block font-bold">Heavy Rates.</span> to
-            <span className="block font-bold">Open Gates.</span>
+            From <span className="font-bold">Heavy Rates.</span>
+            <br />
+            to <span className="font-bold">Open Gates.</span>
           </h2>
+
           <p className="text-2xl text-[#3754A1] font-medium">Join us.</p>
         </div>
 
@@ -68,7 +70,7 @@ const FeaturesSection = () => {
         <div className="flex flex-col">
           <div className="bg-blue-50 p-3 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
             <img
-             src={tax} // Replace with your actual image path
+              src={tax} // Replace with your actual image path
               alt="Envelope Icon"
               className="w-6 h-6"
             />

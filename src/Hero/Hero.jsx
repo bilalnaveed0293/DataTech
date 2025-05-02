@@ -91,7 +91,7 @@ const Hero = () => {
                 </div>
             </section>
             <section className="relative h-32 sm:h-40 md:h-48 lg:h-64 xl:h-80 2xl:h-96">
-                <div 
+                <div
                     className="absolute inset-0 bg-gradient-to-b from-blue-900 to-blue-700 opacity-90"
                     style={{
                         backgroundImage: `url(${Background})`,
@@ -104,8 +104,9 @@ const Hero = () => {
                     <img
                         src={cityimg}
                         alt="City Skyline"
-                        className="w-[54rem] rounded-xl max-w-[95%] sm:max-w-[90%] md:max-w-[85%] lg:max-w-[80%] xl:max-w-[75%] 2xl:max-w-[70%] object-cover"
+                        className="w-[60rem] h-[40rem] rounded-xl max-w-[95%] sm:max-w-[90%] md:max-w-[85%] lg:max-w-[80%] xl:max-w-[75%] 2xl:max-w-[70%] object-cover"
                     />
+
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 h-6 sm:h-8 md:h-10 lg:h-12 xl:h-16 2xl:h-20 bg-stone-800 opacity-50" />
             </section>
