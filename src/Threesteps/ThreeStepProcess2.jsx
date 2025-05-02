@@ -49,7 +49,7 @@ const ThreeStepProcess2 = () => {
               <h3 className="text-2xl font-bold text-[#093431] mb-2">
                 0{index + 1}. {step.title}
               </h3>
-              <p className="text-gray-700 text-lg">{step.description}</p>
+              <p className="text-gray-700 text-xl">{step.description}</p>
             </div>
           </div>
         ))}
