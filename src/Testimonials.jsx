@@ -6,23 +6,30 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      quote: "I started invoicing clients in 2 weeks — no red tape, no stress.",
-      name: "Jacob Jones",
-      position: "CEO, Bernard Health",
+      quote: "As a digital nomad, I’d been jumping from country to country, trying to keep my income steady. When I decided to settle in the UAE, Data Tech took care of everything. Thanks to their tax optimization, I’m keeping a lot more of what I earn, and the whole process was smoother than I expected. I can’t recommend them enough.",
+      name: "Emily J.",
+      position: "Remote Consultant",
       image: p1
     },
     {
       id: 2,
-      quote: "Data Tech helped me earn more and move to the UAE — it was life-changing.",
-      name: "Brooklyn Simmons",
-      position: "CEO, Bernard Health",
+      quote: "As a digital nomad, I’d been jumping from country to country, trying to keep my income steady. When I decided to settle in the UAE, Data Tech took care of everything. Thanks to their tax optimization, I’m keeping a lot more of what I earn, and the whole process was smoother than I expected. I can’t recommend them enough.",
+      name: "Mark T",
+      position: "Digital Entrepreneur",
       image: p1
     },
     {
       id: 3,
-      quote: "When we approached DataTech, we were struggling with outdated ",
-      name: "Alex Rivera",
-      position: "CFO, Global Systems",
+      quote: "I’d always dreamed of living in the UAE, but the paperwork and legal stuff seemed impossible to manage. Then I found Data Tech. They took care of everything — my residency, work permit, and all the complicated forms I would’ve struggled with. Now, I get to live my dream and grow my business without the stress. Couldn’t have done it without them! ",
+      name: "Ravi M",
+      position: "Freelance Developer",
+      image: p1
+    },
+    {
+      id: 3,
+      quote: "Moving to the UAE was a big step for me, but I didn’t want to deal with all the headaches of setting up a full business. Data Tech made it so easy. They helped me set up everything legally, and the best part? I’m keeping all my earnings without the crazy taxes. It’s been a game-changer for my career. ",
+      name: "Sophia L",
+      position: "Marketing Consultant",
       image: p1
     },
   ];

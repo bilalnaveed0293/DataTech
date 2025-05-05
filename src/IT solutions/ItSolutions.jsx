@@ -86,7 +86,7 @@ const ITSolutions = () => {
         </div>
 
         {/* Scrollable container with navigation buttons */}
-        <div className="relative max-w-5xl mx-auto">
+        <div className="relative max-w-6xl mx-auto">
           {/* Navigation buttons */}
           <button className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-16 w-12 h-12 flex items-center justify-center rounded-full bg-gray-100 hover:bg-[#3754A1] cursor-pointer z-10 shadow-md hover:text-white" onClick={() => handleScroll('left')} disabled={currentIndex === 0}>
             <ChevronLeft size={24} />
@@ -96,7 +96,7 @@ const ITSolutions = () => {
           </button>
 
           {/* Scrollable card container */}
-          <div className="overflow-x-hidden px-8">
+          <div className="overflow-x-hidden px-10">
             <div className="flex space-x-6 pb-8 px-4 transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * (100 / 4)}%)` }}>
               {services.map((service, index) => (
                 <div

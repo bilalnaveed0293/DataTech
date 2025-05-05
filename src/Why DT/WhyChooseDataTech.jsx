@@ -1,55 +1,34 @@
 import React from 'react';
 import { ArrowRight, Plus } from 'lucide-react';
+import hexagon from "../assets/hexagon.png";
+import tax from "../assets/tax.png";
+import coin from "../assets/coin.png";
+import empire from "../assets/empire.png";
 
 const WhyChooseDataTech = () => {
   const features = [
     {
-      title: 'Unified Communications',
-      icon: (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" strokeWidth="1.5" />
-          <path d="M3 9H21" stroke="currentColor" strokeWidth="1.5" />
-          <path d="M9 21L9 9" stroke="currentColor" strokeWidth="1.5" />
-        </svg>
-      ),
+      title: 'Comprehensive Health Insurance',
+      description: "A business consultant provides expert advice and guidance to businesses on various aspects.",
+      icon: hexagon,
       position: 'top',
     },
     {
-      title: 'Team Messenger',
-      icon: (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="3" y="6" width="14" height="12" rx="2" stroke="currentColor" strokeWidth="1.5" />
-          <path d="M17 8H19C20.1046 8 21 8.89543 21 10V16C21 17.1046 20.1046 18 19 18H18.5" stroke="currentColor" strokeWidth="1.5" />
-          <circle cx="7.5" cy="12" r="1" fill="currentColor" />
-          <circle cx="12.5" cy="12" r="1" fill="currentColor" />
-        </svg>
-      ),
+      title: 'No Personal Income Tax',
+      description: "Business consultants play a crucial role by offering expert advice and guidance to businesses.",
+      icon: tax,
       position: 'bottom',
     },
     {
-      title: 'Telephony and PBX',
-      icon: (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-        </svg>
-      ),
+      title: 'Financial Independence',
+      description: "Secure your financial future with strategic planning, tax optimization, and investment opportunities designed to maximize your wealth and business growth.",
+      icon: coin,
       position: 'top',
     },
     {
-      title: 'Smart Meeting',
-      icon: (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="1.5" />
-          <path d="M12 5V3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M17 7L18.5 5.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M19 12H21" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M17 17L18.5 18.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M12 19V21" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M7 17L5.5 18.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M5 12H3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M7 7L5.5 5.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-        </svg>
-      ),
+      title: 'Exclusive Banking Services',
+      description: "Through their deep understanding of industry trends and best practices, consultants empower organizations.",
+      icon: empire,
       position: 'bottom',
     },
   ];
@@ -88,11 +67,13 @@ const WhyChooseDataTech = () => {
               }`}
             >
               <div className="text-gray-800 mb-4">
-                {feature.icon}
+                <div className="bg-blue-50 p-3 rounded-lg w-12 h-12 flex items-center justify-center">
+                  <img src={feature.icon || "/placeholder.svg"} alt={feature.title} className="w-6 h-6" />
+                </div>
               </div>
               <h3 className="font-medium text-gray-900 mb-3">{feature.title}</h3>
               <p className="text-gray-600 text-sm mb-6 flex-grow">
-                Promptly solve urgent work issues! Create personal and group chats that allow for exchanging messages not only during conferences but also outside of them.
+                {feature.description}
               </p>
               <div className="flex justify-start">
                 <button className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:bg-gray-50">
