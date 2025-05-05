@@ -84,7 +84,10 @@ const ThreeStepProcess = () => {
       {/* Form Section - Unchanged as in original */}
       <div className="w-full md:w-1/2 bg-white p-8">
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold mb-32 text-gray-900">Let's Build A Future Together</h2>
+          <h2 className="text-3xl font-bold mb-8 text-gray-900">Let's Build A Future Together</h2>
+          <p className="text-base text-gray-500 mb-22">
+                We’re here to simplify your business and help you take control of your financial future.
+                </p>
         </div>
         <div className="max-w-[52rem] mx-auto px-2">
           <div className="mb-3">
