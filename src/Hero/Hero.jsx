@@ -47,7 +47,7 @@ const Hero = () => {
                     <div className="flex flex-col sm:flex-row justify-start gap-3 sm:gap-4 md:gap-6">
                         <button
                             onClick={goToForm}
-                            className="w-full sm:w-auto text-[#3754A1] bg-white px-4 py-2 sm:px-3 md:px-4 lg:px-5 sm:py-2.5 md:py-3 lg:py-4 transition duration-300 flex items-center justify-start text-xs sm:text-sm md:text-base lg:text-lg border border-gray-300 cursor-pointer"
+                            className="w-full sm:w-auto text-[#3754A1] bg-white rounded-lg px-4 py-2 sm:px-3 md:px-4 lg:px-5 sm:py-2.5 md:py-3 lg:py-4 transition duration-300 flex items-center justify-start text-xs sm:text-sm md:text-base lg:text-lg border border-gray-300 cursor-pointer"
                         >
                             <span>Get Started</span>
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 lg:h-6 lg:w-6 ml-1 sm:ml-2" viewBox="0 0 20 20" fill="currentColor">
@@ -55,7 +55,7 @@ const Hero = () => {
                             </svg>
                         </button>
                         <button
-                            className="w-full sm:w-auto text-[#3754A1] bg-white px-4 py-1 sm:px-3 md:px-4 lg:px-5 sm:py-0.5 md:py-1 lg:py-2 transition duration-300 text-xs sm:text-sm md:text-base lg:text-lg border border-gray-300 cursor-pointer"
+                            className="w-full sm:w-auto text-[#3754A1] rounded-lg bg-white px-4 py-1 sm:px-3 md:px-4 lg:px-5 sm:py-0.5 md:py-1 lg:py-2 transition duration-300 text-xs sm:text-sm md:text-base lg:text-lg border border-gray-300 cursor-pointer"
                         >
                             Explore as You Go
                         </button>
