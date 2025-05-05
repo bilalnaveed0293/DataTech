@@ -37,7 +37,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+    <div className="max-w-[90rem] mx-auto px-4 py-16 sm:px-6 lg:px-2">
       {/* Header Section */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-16">
         {/* Left side - Text */}

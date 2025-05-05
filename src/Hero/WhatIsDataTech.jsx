@@ -5,7 +5,7 @@ const WhatIsDataTech = () => {
   return (
     <div className="w-full">
       {/* Core values section */}
-      <div className="bg-indigo-900 text-white p-8 md:p-12 lg:px-56 mx-auto">
+      <div className="bg-indigo-900 text-white p-8 md:p-12 lg:px-27 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Left column */}
           <div className="space-y-8">

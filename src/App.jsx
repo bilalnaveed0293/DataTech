@@ -39,9 +39,8 @@ function MainContent() {
       <FeaturesSection />
       <ThreeStepProcess />
       <ServiceGrid />
-      {/* <WhyChooseDataTech /> */}
+      <WhyChooseDataTech />
       <TechIntegrationShowcase />
-      <ItSolutions/>
       <Testimonials />
       <Faq />
       <GetInTouch />
@@ -64,9 +63,8 @@ function App() {
               <FeaturesSection />
               <ThreeStepProcess />
               <ServiceGrid />
-              {/* <WhyChooseDataTech /> */}
+              <WhyChooseDataTech />
               <TechIntegrationShowcase />
-              <ItSolutions/>
               <Testimonials />
               <Faq />
               <GetInTouch />
