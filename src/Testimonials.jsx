@@ -26,7 +26,7 @@ const Testimonials = () => {
       image: p1
     },
     {
-      id: 3,
+      id: 4,
       quote: "Moving to the UAE was a big step for me, but I didn’t want to deal with all the headaches of setting up a full business. Data Tech made it so easy. They helped me set up everything legally, and the best part? I’m keeping all my earnings without the crazy taxes. It’s been a game-changer for my career. ",
       name: "Sophia L",
       position: "Marketing Consultant",

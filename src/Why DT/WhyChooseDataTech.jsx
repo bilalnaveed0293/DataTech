@@ -51,11 +51,6 @@ const WhyChooseDataTech = () => {
       description: "Make informed decisions with advanced analytics.",
       image: empire,
     },
-    {
-      title: "Data-Driven Growth",
-      description: "Make informed decisions with advanced analytics.",
-      image: empire,
-    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
