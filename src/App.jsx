@@ -43,7 +43,7 @@ function MainContent() {
       <TechIntegrationShowcase />
       <Testimonials />
       <Faq />
-      <GetInTouch />
+      {/* <GetInTouch /> */}
       <JoinToExplore />
     </>
   );
@@ -67,7 +67,7 @@ function App() {
               <TechIntegrationShowcase />
               <Testimonials />
               <Faq />
-              <GetInTouch />
+              {/* <GetInTouch /> */}
               <JoinToExplore />
             </>
           }
