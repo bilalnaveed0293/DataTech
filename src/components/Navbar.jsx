@@ -11,7 +11,7 @@ const Navbar = () => {
                     className='h-12 w-35' />
                 <nav className='flex justify-center flex-1'>
                     <ul className='flex space-x-10'>
-                        <li><a href="#" className="text-[#161616] text-xs">Home</a></li>
+                        <li><a href="#" className="text-[#161616] text-xs hover:text-[#3754A1]">Home</a></li>
                         <li><a href="#" className="text-[#161616] hover:text-[#3754A1] text-xs">About</a></li>
                         <li><a href="#" className="text-[#161616] hover:text-[#3754A1] text-xs">Page</a></li>
                         <li><a href="#" className="text-[#161616] hover:text-[#3754A1] text-xs">Feature</a></li>
