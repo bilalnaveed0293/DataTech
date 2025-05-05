@@ -34,7 +34,7 @@ function MainContent() {
   return (
     <>
       <Navbar />
-      <Hero />
+      <Hero2 />
       <WhatIsDataTech />
       <FeaturesSection />
       <ThreeStepProcess2 />
@@ -58,7 +58,7 @@ function App() {
           element={
             <>
               <Navbar />
-              <Hero />
+              <Hero2 />
               <WhatIsDataTech />
               <FeaturesSection />
               <ThreeStepProcess2 />
