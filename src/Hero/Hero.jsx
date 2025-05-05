@@ -1,26 +1,27 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import coin1 from '../assets/coin1.mp4';
+
 const Hero = () => {
     const navigate = useNavigate();
-    
+
     const goToForm = (e) => {
         e.preventDefault();
         navigate("/form");
     }
-    
+
     return (
         <>
             <section
-                className="relative min-h-[20rem] sm:min-h-[24rem] md:min-h-[28rem] lg:min-h-[32rem] xl:min-h-[40rem] 2xl:min-h-[46rem] flex flex-col items-center justify-center text-center px-4 sm:px-6 md:px-8  mb-12 sm:mb-20 md:mb-30"
+                className="relative min-h-[20rem] sm:min-h-[35rem] md:min-h-[38rem] lg:min-h-[42rem] xl:min-h-[48rem] 2xl:min-h-[50rem] flex flex-col items-start justify-center text-left px-2 sm:px-4 md:px-6 mb-12 sm:mb-20 md:mb-30"
             >
                 {/* Video Background */}
                 <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
-                    <video 
+                    <video
                         className="absolute w-full h-full object-cover"
-                        autoPlay 
-                        loop 
-                        muted 
+                        autoPlay
+                        loop
+                        muted
                         playsInline
                     >
                         <source src={coin1} type="video/mp4" />
@@ -29,84 +30,35 @@ const Hero = () => {
                     {/* Optional overlay to ensure text readability */}
                     <div className="absolute inset-0 bg-black opacity-30"></div>
                 </div>
-                
-                <div className="container mx-auto w-full max-w-[90%] sm:max-w-[85%] md:max-w-2xl lg:max-w-3xl xl:max-w-5xl 2xl:max-w-6xl relative z-10 mb-4 sm:mb-5 md:mb-6">
+
+                <div className="container mx-12 sm:mx-14 md:mx-16 lg:mx-18 xl:mx-20 w-full max-w-[90%] sm:max-w-[85%] md:max-w-2xl lg:max-w-3xl xl:max-w-5xl 2xl:max-w-6xl relative z-10 mb-4 sm:mb-5 md:mb-6">
                     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white leading-tight mb-4 sm:mb-5 md:mb-6">
                         Maximize Your Take-Home Earnings With <span className="text-[#3754A1]">Data Tech</span>
                     </h1>
-                    
-                    <ul className="text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-lg text-white mb-6 sm:mb-8 md:mb-10 mx-inside mt-3 sm:mt-4 md:mt-5 list-none text-center space-y-2">
-                        <li className="flex items-center justify-center">
-                            <div className="flex items-center w-[80%] sm:w-[70%] md:w-[60%] lg:w-[50%] ml-4 sm:ml-6 md:ml-8">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 text-green-500 mr-2 flex-shrink-0"
-                                    fill="currentColor"
-                                >
-                                    <path d="M11.707,15.707C11.512,15.902,11.256,16,11,16s-0.512-0.098-0.707-0.293l-4-4c-0.391-0.391-0.391-1.023,0-1.414 s1.023-0.391,1.414,0L11,13.586l8.35-8.35C17.523,3.251,14.911,2,12,2C6.477,2,2,6.477,2,12c0,5.523,4.477,10,10,10s10-4.477,10-10 c0-1.885-0.531-3.642-1.438-5.148L11.707,15.707z"></path>
-                                </svg>
-                                <span className="text-left">Operate globally without setting up a company</span>
-                            </div>
-                        </li>
-                        <li className="flex items-center justify-center">
-                            <div className="flex items-center w-[80%] sm:w-[70%] md:w-[60%] lg:w-[50%] ml-4 sm:ml-6 md:ml-8">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 text-green-500 mr-2 flex-shrink-0"
-                                    fill="currentColor"
-                                >
-                                    <path d="M11.707,15.707C11.512,15.902,11.256,16,11,16s-0.512-0.098-0.707-0.293l-4-4c-0.391-0.391-0.391-1.023,0-1.414 s1.023-0.391,1.414,0L11,13.586l8.35-8.35C17.523,3.251,14.911,2,12,2C6.477,2,2,6.477,2,12c0,5.523,4.477,10,10,10s10-4.477,10-10 c0-1.885-0.531-3.642-1.438-5.148L11.707,15.707z"></path>
-                                </svg>
-                                <span className="text-left">Legally invoice clients</span>
-                            </div>
-                        </li>
-                        <li className="flex items-center justify-center">
-                            <div className="flex items-center w-[80%] sm:w-[70%] md:w-[60%] lg:w-[50%] ml-4 sm:ml-6 md:ml-8">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 text-green-500 mr-2 flex-shrink-0"
-                                    fill="currentColor"
-                                >
-                                    <path d="M11.707,15.707C11.512,15.902,11.256,16,11,16s-0.512-0.098-0.707-0.293l-4-4c-0.391-0.391-0.391-1.023,0-1.414 s1.023-0.391,1.414,0L11,13.586l8.35-8.35C17.523,3.251,14.911,2,12,2C6.477,2,2,6.477,2,12c0,5.523,4.477,10,10,10s10-4.477,10-10 c0-1.885-0.531-3.642-1.438-5.148L11.707,15.707z"></path>
-                                </svg>
-                                <span className="text-left">Access UAE residency</span>
-                            </div>
-                        </li>
-                        <li className="flex items-center justify-center">
-                            <div className="flex items-center w-[80%] sm:w-[70%] md:w-[60%] lg:w-[50%] ml-4 sm:ml-6 md:ml-8">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 text-green-500 mr-2 flex-shrink-0"
-                                    fill="currentColor"
-                                >
-                                    <path d="M11.707,15.707C11.512,15.902,11.256,16,11,16s-0.512-0.098-0.707-0.293l-4-4c-0.391-0.391-0.391-1.023,0-1.414 s1.023-0.391,1.414,0L11,13.586l8.35-8.35C17.523,3.251,14.911,2,12,2C6.477,2,2,6.477,2,12c0,5.523,4.477,10,10,10s10-4.477,10-10 c0-1.885-0.531-3.642-1.438-5.148L11.707,15.707z"></path>
-                                </svg>
-                                <span className="text-left">Pay zero personal income tax — all with Data Tech</span>
-                            </div>
-                        </li>
-                    </ul>
-                    
-                    <div className="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-3 md:space-x-4 lg:space-x-6">
-                        <a 
+
+                    <div className="text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-lg text-white mb-6 sm:mb-8 md:mb-10 mx-inside mt-3 sm:mt-4 md:mt-5 space-y-2">
+                        <p className='font-semibold'>Operate Globally Without Setting Up a Company
+                           
+                            Legally Invoice Clients
+                            <br />
+                            Access UAE Residency
+                            Pay Zero Personal Income Tax — All with Data Tech</p></div>
+
+                    <div className="flex flex-col sm:flex-row justify-start gap-3 sm:gap-4 md:gap-6">
+                        <button
                             onClick={goToForm}
-                            href="#"
-                            className="bg-[#3754A1] text-white px-3 py-2 sm:px-4 sm:py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-full transition duration-300 flex items-center text-xs sm:text-sm md:text-base lg:text-lg border border-gray-300"
+                            className="w-full sm:w-auto text-[#3754A1] bg-white px-4 py-2 sm:px-5 md:px-6 lg:px-8 sm:py-2.5 md:py-3 lg:py-4 transition duration-300 flex items-center justify-start text-xs sm:text-sm md:text-base lg:text-lg border border-gray-300 hover:bg-[#2a437d]"
                         >
-                            Get Started 
+                            <span>Get Started</span>
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 lg:h-6 lg:w-6 ml-1 sm:ml-2" viewBox="0 0 20 20" fill="currentColor">
                                 <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                             </svg>
-                        </a>
-                        <a
-                            href="#"
-                            className="text-white bg-[#3754A1] px-3 py-2 sm:px-4 sm:py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-full transition duration-300 text-xs sm:text-sm md:text-base lg:text-lg border border-gray-300"
+                        </button>
+                        <button
+                            className="w-full sm:w-auto text-[#3754A1] bg-white px-4 py-2 sm:px-5 md:px-6 lg:px-8 sm:py-2.5 md:py-3 lg:py-4 transition duration-300 text-xs sm:text-sm md:text-base lg:text-lg border border-gray-300 hover:bg-[#2a437d]"
                         >
                             Explore as You Go
-                        </a>
+                        </button>
                     </div>
                 </div>
             </section>
