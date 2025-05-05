@@ -8,8 +8,8 @@ import third from '../assets/33.png'; // Adjust the path to your image
 const ThreeStepProcess = () => {
   const steps = [
     {
-      title: 'Choose Services',
-      description: "It is a long established fact that a reader will be distracted by the readable content of a page.",
+      title: 'Eligibility Check',
+      description: "We evaluate your profile and business model to ensure you're qualified for our UAE-based solutions.",
       icon: (
         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M24 12C18.48 12 14 16.48 14 22C14 27.52 18.48 32 24 32C29.52 32 34 27.52 34 22C34 16.48 29.52 12 24 12ZM24 30C19.59 30 16 26.41 16 22C16 17.59 19.59 14 24 14C28.41 14 32 17.59 32 22C32 26.41 28.41 30 24 30Z" fill="#9370DB"/>
@@ -19,8 +19,8 @@ const ThreeStepProcess = () => {
       ),
     },
     {
-      title: 'Project Analysis',
-      description: "It is a long established fact that a reader will be distracted by the readable content of a page.",
+      title: 'Legal Agreement',
+      description: "A transparent, compliant agreement secures your path forward with confidence.",
       icon: (
         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M14 34V24M24 34V14M34 34V20" stroke="#9370DB" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -31,8 +31,8 @@ const ThreeStepProcess = () => {
       ),
     },
     {
-      title: 'Got Final Result',
-      description: "It is a long established fact that a reader will be distracted by the readable content of a page.",
+      title: 'Residency & Permit Setup',
+      description: "We manage the full visa and work permit process — setting you up for success in the UAE and beyond.",
       icon: (
         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="24" cy="24" r="10" stroke="#9370DB" strokeWidth="2"/>

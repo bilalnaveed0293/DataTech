@@ -65,8 +65,8 @@ function App() {
               <ThreeStepProcess />
               <ServiceGrid />
               <WhyChooseDataTech />
-              <ItSolutions/>
               <TechIntegrationShowcase />
+              <ItSolutions/>
               <Testimonials />
               <Faq />
               <GetInTouch />
