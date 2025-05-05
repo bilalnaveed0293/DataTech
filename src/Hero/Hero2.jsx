@@ -13,7 +13,7 @@ const Hero2 = () => {
     return (
         <>
             <section
-                className="relative min-h-[20rem] sm:min-h-[35rem] md:min-h-[38rem] lg:min-h-[42rem] xl:min-h-[48rem] 2xl:min-h-[50rem] flex flex-col items-start justify-center text-left px-2 sm:px-4 md:px-6 mb-12 sm:mb-20 md:mb-30"
+                className="relative min-h-[20rem] sm:min-h-[35rem] md:min-h-[38rem] lg:min-h-[42rem] xl:min-h-[48rem] 2xl:min-h-[50rem] flex flex-col items-start justify-center text-left px-2 sm:px-4 md:px-6 "
             >
                 {/* Image Background */}
                 <div className="absolute inset-0 w-full h-full overflow-hidden z-0">

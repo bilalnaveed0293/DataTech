@@ -34,13 +34,14 @@ function MainContent() {
   return (
     <>
       <Navbar />
-      <Hero2 />
+      <Hero />
       <WhatIsDataTech />
       <FeaturesSection />
-      <ThreeStepProcess2 />
+      <ThreeStepProcess />
       <ServiceGrid />
       <WhyChooseDataTech />
       <TechIntegrationShowcase />
+      <ItSolutions/>
       <Testimonials />
       <Faq />
       <GetInTouch />
@@ -58,12 +59,13 @@ function App() {
           element={
             <>
               <Navbar />
-              <Hero2 />
+              <Hero />
               <WhatIsDataTech />
               <FeaturesSection />
-              <ThreeStepProcess2 />
+              <ThreeStepProcess />
               <ServiceGrid />
               <WhyChooseDataTech />
+              <ItSolutions/>
               <TechIntegrationShowcase />
               <Testimonials />
               <Faq />
