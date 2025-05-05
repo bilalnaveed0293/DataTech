@@ -21,6 +21,7 @@ import WhatIsDataTech from './Hero/WhatIsDataTech';
 import Form from './Form2/Form';
 import './App.css';
 import ThreeStepProcess2 from './Threesteps/ThreeStepProcess2';
+import Hero2 from './Hero/Hero2';
 
 function MainContent() {
   const location = useLocation();
@@ -51,10 +52,27 @@ function MainContent() {
 function App() {
   return (
     <Router>
-      <MainContent />
       <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Navbar />
+              <Hero />
+              <WhatIsDataTech />
+              <FeaturesSection />
+              <ThreeStepProcess2 />
+              <ServiceGrid />
+              <WhyChooseDataTech />
+              <TechIntegrationShowcase />
+              <Testimonials />
+              <Faq />
+              <GetInTouch />
+              <JoinToExplore />
+            </>
+          }
+        />
         <Route path="/form" element={<Form />} />
-        {/* Add other routes if needed */}
       </Routes>
     </Router>
   );
