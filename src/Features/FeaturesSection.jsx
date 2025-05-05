@@ -37,7 +37,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <div className="w-full max-w-[95rem] mx-auto px-4 py-12 sm:py-16 sm:px-6 lg:px-8">
+    <div className="w-full max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
       {/* Header Section */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 md:gap-8 mb-12 sm:mb-16">
         {/* Left side - Text */}
@@ -54,7 +54,7 @@ const FeaturesSection = () => {
         </div>
 
         {/* Right side - Images */}
-        <div className="relative w-full max-w-[400px] md:max-w-[500px] h-[120px] sm:h-[160px] md:h-[200px]">
+        <div className="relative w-full max-w-[400px] md:max-w-[500px] h-[120px] sm:h-[160px] md:h-[200px] mt-4 md:mt-0">
           <div className="absolute top-0 left-0 w-16 sm:w-20 md:w-28 h-16 sm:h-20 md:h-28 overflow-hidden rounded-lg shadow-md">
             <img src={fpic1} alt="City view" className="w-full h-full object-cover" />
           </div>
