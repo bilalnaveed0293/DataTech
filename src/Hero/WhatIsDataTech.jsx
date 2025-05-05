@@ -58,9 +58,10 @@ const WhatIsDataTech = () => {
                   <Check className="h-4 w-4 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg">Access UAE Residency</h3>
+                  <h3 className="font-semibold text-lg"> Act With Integrity</h3>
                   <p className="text-white text-sm">
-                    Access UAE Residency
+                    Our company exists to help merchants sell more. We make every decision and measure every outcome
+                    based on how well it serves our customers.
                   </p>
                 </div>
               </div>
@@ -75,10 +76,9 @@ const WhatIsDataTech = () => {
                   <Check className="h-4 w-4 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg">Act With Integrity</h3>
+                  <h3 className="font-semibold text-lg">Access UAE Residency</h3>
                   <p className="text-white text-sm">
-                    Our company exists to help merchants sell more. We make every decision and measure every outcome
-                    based on how well it serves our customers.
+                  Access UAE Residency   
                   </p>
                 </div>
               </div>

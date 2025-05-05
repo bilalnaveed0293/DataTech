@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, ArrowRight } from 'lucide-react';
 
 // Assuming these images are available in the assets folder
 import eligibilityImg from '../assets/Eligibility.png';
@@ -40,25 +40,66 @@ const ThreeStepProcess = () => {
         <div className="text-center mb-16 max-w-lg mx-auto">
           <p className="text-gray-600">Comprehensive Suite of Cutting-Edge IT Services.</p>
         </div>
-        <div className="flex flex-col items-start">
-          {steps.map((step, index) => (
-            <div key={index} className="flex items-start mb-8">
-              <div className="bg-white p-4 rounded-lg shadow-sm mr-4 w-20 h-20 flex items-center justify-center">
-                <img src={step.image} alt={step.title} className="w-full h-full object-contain" />
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">{step.title}</h3>
-                <p className="text-gray-600 text-sm max-w-xs">{step.description}</p>
-              </div>
+        
+        {/* Flow diagram style layout */}
+        <div className="flex flex-col items-center space-y-6 md:space-y-0 md:flex-row md:justify-center md:items-start md:space-x-4 lg:space-x-8 mb-12">
+          {/* Step 1 */}
+          <div className="flex flex-col items-center max-w-[200px]">
+            <div className="bg-white p-4 rounded-lg shadow-sm mb-4 w-20 h-20 flex items-center justify-center">
+              <img src={steps[0].image || "/placeholder.svg"} alt={steps[0].title} className="w-full h-full object-contain" />
             </div>
+            <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">{steps[0].title}</h3>
+            <p className="text-gray-600 text-sm text-center">{steps[0].description}</p>
+          </div>
+          
+          {/* Arrow 1 */}
+          <div className="hidden md:flex items-center justify-center">
+            <ArrowRight className="w-8 h-8 text-indigo-900" />
+          </div>
+          
+          {/* Step 2 */}
+          <div className="flex flex-col items-center max-w-[200px]">
+            <div className="bg-white p-4 rounded-lg shadow-sm mb-4 w-20 h-20 flex items-center justify-center">
+              <img src={steps[1].image || "/placeholder.svg"} alt={steps[1].title} className="w-full h-full object-contain" />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">{steps[1].title}</h3>
+            <p className="text-gray-600 text-sm text-center">{steps[1].description}</p>
+          </div>
+          
+          {/* Arrow 2 */}
+          <div className="hidden md:flex items-center justify-center">
+            <ArrowRight className="w-8 h-8 text-indigo-900" />
+          </div>
+          
+          {/* Step 3 */}
+          <div className="flex flex-col items-center max-w-[200px]">
+            <div className="bg-white p-4 rounded-lg shadow-sm mb-4 w-20 h-20 flex items-center justify-center">
+              <img src={steps[2].image || "/placeholder.svg"} alt={steps[2].title} className="w-full h-full object-contain" />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">{steps[2].title}</h3>
+            <p className="text-gray-600 text-sm text-center">{steps[2].description}</p>
+          </div>
+        </div>
+        
+        {/* Mobile view - vertical arrows */}
+        <div className="flex flex-col items-center md:hidden">
+          {steps.map((step, index) => (
+            <React.Fragment key={index}>
+              {index > 0 && (
+                <div className="my-2">
+                  <ArrowRight className="w-6 h-6 text-indigo-900 transform rotate-90" />
+                </div>
+              )}
+            </React.Fragment>
           ))}
         </div>
-        <div className="text-center mt-16">
+        
+        <div className="text-center mt-8">
           <p className="text-gray-600">Need more help? Go to our <a href="#" className="text-indigo-900 hover:underline">Support Center</a></p>
         </div>
       </div>
 
-      {/* Form Section */}
+      {/* Form Section - Unchanged as requested */}
       <div className="w-full md:w-1/2 bg-white p-8">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold mb-2 text-gray-900">Let's Build A Future Together</h2>
