@@ -5,7 +5,7 @@ const ServiceCard = ({ title, description, blueImage, whiteImage, isActive = fal
 
   return (
     <div
-      className={`p-6 rounded-lg shadow-md flex flex-col justify-between h-full bg-[#ECF2FC] hover:bg-[#3754A1] hover:text-white transition-colors duration-300`}
+      className={`p-6 rounded-lg shadow-md flex flex-col justify-between h-full bg-[#ECF2FC] hover:bg-[#101c4b] hover:text-white transition-colors duration-300`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >

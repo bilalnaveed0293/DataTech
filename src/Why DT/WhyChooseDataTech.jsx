@@ -1,104 +1,137 @@
-import React from 'react';
-import { ArrowRight, Plus } from 'lucide-react';
 import hexagon from "../assets/hexagon.png";
 import tax from "../assets/tax.png";
 import coin from "../assets/coin.png";
 import empire from "../assets/empire.png";
+import Etep from "../assets/ETEP.png";
+import bms from "../assets/BMS.png";
+import tdr from "../assets/TDR.png";
+import gfa from "../assets/GFA.png";
+import React, { useState } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const WhyChooseDataTech = () => {
-  const features = [
+  const benefits = [
     {
-      title: 'Comprehensive Health Insurance',
-      description: "A business consultant provides expert advice and guidance to businesses on various aspects.",
-      icon: hexagon,
-      position: 'top',
+      title: "Global Financial Access",
+      description: "Access international banking and payment systems with ease.",
+      image: gfa,
     },
     {
-      title: 'No Personal Income Tax',
-      description: "Business consultants play a crucial role by offering expert advice and guidance to businesses.",
-      icon: tax,
-      position: 'bottom',
+      title: "Business Made Simple",
+      description: "Streamlined processes that remove complexity from global operations.",
+      image: bms,
     },
     {
-      title: 'Financial Independence',
-      description: "Secure your financial future with strategic planning, tax optimization, and investment opportunities designed to maximize your wealth and business growth.",
-      icon: coin,
-      position: 'top',
+      title: "Tech-Driven Results",
+      description: "Leverage cutting-edge technology for maximum efficiency and growth.",
+      image: tdr,
     },
     {
-      title: 'Exclusive Banking Services',
-      description: "Through their deep understanding of industry trends and best practices, consultants empower organizations.",
-      icon: empire,
-      position: 'bottom',
+      title: "End-to-End Partnership",
+      description: "Complete support from initial setup through ongoing operations.",
+      image: Etep,
+    },
+    {
+      title: "Tax Optimization",
+      description: "Save on taxes with strategic financial planning.",
+      image: tax,
+    },
+    {
+      title: "Financial Freedom",
+      description: "Achieve financial independence with our tools.",
+      image: coin,
+    },
+    {
+      title: "Secure Operations",
+      description: "Protect your business with top-tier security measures.",
+      image: hexagon,
+    },
+    {
+      title: "Data-Driven Growth",
+      description: "Make informed decisions with advanced analytics.",
+      image: empire,
+    },
+    {
+      title: "Data-Driven Growth",
+      description: "Make informed decisions with advanced analytics.",
+      image: empire,
     },
   ];
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const itemsPerSlide = 4;
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === 0 ? 0 : prevIndex - itemsPerSlide
+    );
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex + itemsPerSlide >= benefits.length ? 0 : prevIndex + itemsPerSlide
+    );
+  };
+
+  // Display only the visible benefits based on currentIndex
+  const visibleBenefits = benefits.slice(currentIndex, currentIndex + itemsPerSlide);
+
   return (
-    <div className="w-full bg-gray-50 py-16 px-4 md:px-8">
-      <div className="max-w-7xl mx-auto">
-        {/* WHAT WE OFFERS Badge */}
-        <div className="flex justify-center mb-6">
-          <div className="bg-white rounded-full px-4 py-1 inline-flex items-center">
-            <span className="text-[#3754A1] text-sm font-medium">•• WHAT WE OFFERS</span>
-          </div>
+    <section className="py-16 bg-gray-50">
+      <div className="container mx-auto px-4 max-w-6xl">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+            Why Choose Data Tech?
+          </h2>
+          <p className="text-xl text-gray-600 font-medium">
+            Discover the Benefits That Drive Real Growth
+          </p>
         </div>
 
-        {/* Heading */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-2">
-            <span className="text-gray-800">Professional </span>
-            <span className="text-gray-900">UltraHD Video</span>
-          </h1>
-          <h1 className="text-4xl md:text-5xl font-bold mb-2">
-            <span className="text-gray-900">Conferencing</span>
-            <span className="text-gray-600 font-normal"> Platform</span>
-          </h1>
-        </div>
-
-        {/* Feature Cards with staggered layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
-          {features.map((feature, index) => (
-            <div 
-              key={index} 
-              className={`bg-white rounded-lg shadow-sm p-6 flex flex-col ${
-                feature.position === 'top' 
-                  ? 'lg:-mt-8 transform transition-transform duration-700 hover:-translate-y-2' 
-                  : 'lg:mt-8 transform transition-transform duration-700 hover:-translate-y-2'
-              }`}
-            >
-              <div className="text-gray-800 mb-4">
-                <div className="bg-blue-50 p-3 rounded-lg w-12 h-12 flex items-center justify-center">
-                  <img src={feature.icon || "/placeholder.svg"} alt={feature.title} className="w-6 h-6" />
+        <div className="relative">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {visibleBenefits.map((benefit, index) => (
+              <div 
+                key={index} 
+                className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300 flex flex-col items-center"
+              >
+                <div className="mb-4 h-16 w-16 flex items-center justify-center">
+                  <img 
+                    src={benefit.image} 
+                    alt={benefit.title} 
+                    className="max-h-full max-w-full object-contain"
+                  />
                 </div>
+                <h3 className="text-lg font-bold text-[#3754A1] mb-2 text-center">{benefit.title}</h3>
+                <p className="text-gray-600 text-center">{benefit.description}</p>
               </div>
-              <h3 className="font-medium text-gray-900 mb-3">{feature.title}</h3>
-              <p className="text-gray-600 text-sm mb-6 flex-grow">
-                {feature.description}
-              </p>
-              <div className="flex justify-start">
-                <button className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:bg-gray-50">
-                  <Plus size={16} />
-                </button>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          
+          <button 
+            onClick={handlePrev}
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 -ml-4 bg-white p-2 cursor-pointer rounded-full shadow-md text-gray-700 hover:text-[#3754A1]"
+            aria-label="Previous slide"
+          >
+            <ChevronLeft size={24} />
+          </button>
+          
+          <button 
+            onClick={handleNext}
+            className="absolute cursor-pointer right-0 top-1/2 transform -translate-y-1/2 -mr-4 bg-white p-2 rounded-full shadow-md text-gray-700 hover:text-[#3754A1]"
+            aria-label="Next slide"
+          >
+            <ChevronRight size={24} />
+          </button>
         </div>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-wrap justify-center items-center gap-4 mt-16">
-          <button className="bg-[#3754A1] cursor-pointer text-white px-6 py-3 rounded-lg flex items-center gap-2 font-medium">
-            Get Free Quote
-            <ArrowRight className="h-4 w-4" />
-          </button>
-          <button className="text-gray-800 hover:bg-gray-100 px-6 py-3 rounded-lg font-medium">
-            How We Work
+        <div className="mt-12 text-center">
+          <button className="bg-[#3754A1] hover:bg-blue-800 text-white font-medium py-3 px-8 rounded-md transition duration-300">
+            Learn More
           </button>
         </div>
       </div>
-      
-      {/* Bottom border */}
-      <div className="w-full h-0.5 bg-[#3754A1] mt-16"></div>
-    </div>
+    </section>
   );
 };
 

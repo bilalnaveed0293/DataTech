@@ -37,7 +37,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <div className="max-w-[90rem] mx-auto px-4 py-16 sm:px-6 lg:px-2">
+    <div className="max-w-[94rem] mx-auto px-4 py-16 sm:px-6 lg:px-8">
       {/* Header Section */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-16">
         {/* Left side - Text */}
@@ -51,7 +51,7 @@ const FeaturesSection = () => {
             to <span className="font-bold">Open Gates.</span>
           </h2>
 
-          <p className="text-2xl text-indigo-900 font-medium">Join us.</p>
+          <p className="text-2xl text-indigo-700 font-medium">Join us.</p>
         </div>
 
         {/* Right side - Images */}
