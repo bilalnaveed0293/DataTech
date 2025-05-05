@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
 import logo from '../assets/datatech logo.png';
 import { Menu, X } from 'lucide-react'; // optional: `npm i lucide-react`
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const handleGetStarted = (e) => {
+    e.preventDefault();
+    navigate("/form");
+  };
 
   return (
     <header className="absolute top-0 left-0 w-full z-20 bg-transparent shadow-none">
@@ -63,6 +70,7 @@ const Navbar = () => {
           </a>
           <a
             href="#"
+            onClick={handleGetStarted}
             className="text-white border rounded-full px-4 py-2 border-gray-300 hover:bg-[#3754A1]"
           >
             Get Started
