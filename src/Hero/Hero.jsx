@@ -49,7 +49,7 @@ const Hero = () => {
               Explore as You Go
             </button>
             <button
-              onClick={goToForm}
+             
               className="w-full sm:w-auto text-white bg-transparent rounded-lg px-4 py-2 sm:px-3 md:px-4 lg:px-5 sm:py-2.5 md:py-3 lg:py-2 transition duration-300 flex items-center justify-start text-xs sm:text-sm md:text-base lg:text-lg border border-gray-300 cursor-pointer"
             >
               <span>Get Started</span>
