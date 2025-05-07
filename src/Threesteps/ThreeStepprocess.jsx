@@ -100,7 +100,7 @@ const ThreeStepProcess = () => {
         </div>
 
         {/* Flow diagram with alternating curved arrows */}
-        <div className="relative flex flex-row items-center justify-center gap-20">
+        <div className="relative flex flex-row max-sm:flex-col items-center justify-center gap-10 md:gap-20">
           {steps.map((step, index) => (
             <React.Fragment key={index}>
               <div className="relative flex flex-col items-center max-w-[300px] mb-8">
