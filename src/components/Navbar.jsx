@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/datatech logo.png";
+import logo from "../assets/datatech logo2.svg";
 import { Menu, X } from "lucide-react"; // optional: `npm i lucide-react`
 import { useNavigate } from "react-router-dom";
 
@@ -14,9 +14,9 @@ const Navbar = () => {
 
   return (
     <header className="absolute top-0 left-0 w-full z-20 bg-transparent shadow-none">
-      <div className="container mx-auto flex justify-between items-center py-2 px-4">
+      <div className="container mx-auto flex justify-between items-center py-4 px-4">
         {/* Logo */}
-        <img src={logo} alt="datatech logo" className="h-12 w-auto" />
+        <img src={logo} alt="datatech logo" className="h-12 lg:h-16  w-auto" />
 
         {/* Mobile toggle button */}
         <div className="lg:hidden">
