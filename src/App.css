@@ -1,1 +1,13 @@
 @import "tailwindcss";
+/* In your main CSS file */
+@import '@fontsource/outfit';
+
+/* Make Outfit the default font for the whole app */
+html, body {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Or create a custom class */
+.outfit-font {
+  font-family: 'Outfit', sans-serif;
+}
