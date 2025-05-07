@@ -178,7 +178,7 @@ const TechIntegrationShowcase = () => {
       {/* Main content section */}
       <div className="bg-gray-900 text-white py-16 px-4 text-center">
         <div className="mt-8">
-          <h2 className="text-3xl font-bold mb-2">
+          <h2 className="text-4xl font-bold mb-2">
             Essential Connect your favorite
             <br />
             tools with datatech.

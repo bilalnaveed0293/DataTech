@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import logo from '../assets/datatech logo.png';
-import { Menu, X } from 'lucide-react'; // optional: `npm i lucide-react`
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import logo from "../assets/datatech logo.png";
+import { Menu, X } from "lucide-react"; // optional: `npm i lucide-react`
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +20,10 @@ const Navbar = () => {
 
         {/* Mobile toggle button */}
         <div className="lg:hidden">
-          <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none text-white">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="focus:outline-none text-white"
+          >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
@@ -28,32 +31,32 @@ const Navbar = () => {
         {/* Nav Links */}
         <nav
           className={`${
-            isOpen ? 'block' : 'hidden'
+            isOpen ? "block" : "hidden"
           } absolute top-full left-0 w-full bg-transparent border-t border-gray-200 lg:border-none lg:static lg:block lg:w-auto`}
         >
-          <ul className="flex flex-col space-y-4 p-4 lg:p-0 lg:flex-row lg:space-y-0 lg:space-x-10">
+          <ul className="flex flex-col space-y-4 p-4 lg:p-0 lg:flex-row lg:space-y-0 lg:space-x-10  text-sm">
             <li>
-              <a href="#" className="text-white hover:text-[#3754A1] text-xs">
+              <a href="#" className="text-white hover:text-[#3754A1]">
                 Home
               </a>
             </li>
             <li>
-              <a href="#" className="text-white hover:text-[#3754A1] text-xs">
+              <a href="#" className="text-white hover:text-[#3754A1]">
                 About
               </a>
             </li>
             <li>
-              <a href="#" className="text-white hover:text-[#3754A1] text-xs">
+              <a href="#" className="text-white hover:text-[#3754A1]">
                 Page
               </a>
             </li>
             <li>
-              <a href="#" className="text-white hover:text-[#3754A1] text-xs">
+              <a href="#" className="text-white hover:text-[#3754A1]">
                 Feature
               </a>
             </li>
             <li>
-              <a href="#" className="text-white hover:text-[#3754A1] text-xs">
+              <a href="#" className="text-white hover:text-[#3754A1]">
                 Contact
               </a>
             </li>
@@ -64,14 +67,15 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center space-x-4 text-xs">
           <a
             href="#"
-            className="text-white border rounded-full px-4 py-2 border-gray-300 hover:bg-[#3754A1]"
+            className="w-full sm:w-auto text-white rounded-lg bg-transparent px-4 py-1 sm:px-3 md:px-4 lg:px-5 sm:py-0.5 md:py-1 lg:py-2 transition duration-300 text-xs sm:text-sm md:text-base lg:text-sm border border-[#3754A1] cursor-pointer"
           >
             Log in
           </a>
           <a
             href="#"
             onClick={handleGetStarted}
-            className="text-white border rounded-full px-4 py-2 border-gray-300 hover:bg-[#3754A1]"
+            className="w-full sm:w-auto text-white rounded-lg bg-transparent px-4 py-1 sm:px-3 md:px-4 lg:px-5 sm:py-0.5 md:py-1 lg:py-2 transition duration-300 text-xs sm:text-sm md:text-base lg:text-sm border border-[#3754A1] cursor-pointer"
+
           >
             Get Started
           </a>

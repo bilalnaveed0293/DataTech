@@ -42,27 +42,27 @@ const FeaturesSection = () => {
         {/* Header Section */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 md:gap-8 mb-12 sm:mb-16">
           {/* Left side - Text */}
-          <div className="w-full max-w-lg">
+          <div className="w-full max-w-xl">
             <div className="inline-block bg-blue-100 text-indigo-900 px-3 sm:px-4 py-1 rounded-full text-xs sm:text-sm font-medium mb-4">
               ••• OUR FEATURES
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal text-gray-900 mb-2">
-              From <span className="font-bold">Heavy Rates.</span>
-              <br />
-              to <span className="font-bold">Open Gates.</span>
+            <h2 className="text-2xl sm:text-3xl md:text-6xl font-bold text-gray-900 mb-2">
+              From <span className="font-bold text-[#173d85]">Heavy Rates, </span>
+             
+              to <span className="font-bold text-[#173d85]">Open Gates.</span>
             </h2>
             <p className="text-lg sm:text-xl md:text-2xl text-indigo-700 font-medium">Join us.</p>
           </div>
 
           {/* Right side - Images */}
-          <div className="relative w-full max-w-[400px] md:max-w-[500px] h-[120px] sm:h-[160px] md:h-[200px] mt-4 md:mt-0">
-            <div className="absolute top-0 left-0 w-16 sm:w-20 md:w-28 h-16 sm:h-20 md:h-28 overflow-hidden rounded-lg shadow-md">
+          <div className="relative max-sm:hidden w-full max-w-[400px] md:max-w-[500px] h-[120px] sm:h-[160px] md:h-[200px] mt-4 md:mt-0">
+            <div className="absolute top-0 left-0 w-16 sm:w-20 md:w-36 h-16 sm:h-20 md:h-32 overflow-hidden rounded-lg shadow-md">
               <img src={fpic1} alt="City view" className="w-full h-full object-cover" />
             </div>
-            <div className="absolute top-2 sm:top-4 left-20 sm:left-24 md:left-32 w-24 sm:w-32 md:w-40 h-16 sm:h-20 md:h-28 overflow-hidden rounded-lg shadow-md">
+            <div className="absolute top-6 sm:top-4 left-20 sm:left-24 md:left-32 w-24 sm:w-32 md:w-44 h-16 sm:h-20 md:h-32 overflow-hidden rounded-lg shadow-md">
               <img src={fpic2} alt="Aerial city view" className="w-full h-full object-cover" />
             </div>
-            <div className="absolute top-0 left-36 sm:left-44 md:left-60 w-24 sm:w-32 md:w-40 h-28 sm:h-36 md:h-48 overflow-hidden rounded-lg shadow-md">
+            <div className="absolute top-12 left-36 sm:left-44 md:left-64 w-24 sm:w-32 md:w-48 h-28 sm:h-36 md:h-32 overflow-hidden rounded-lg shadow-md">
               <img src={fpic3} alt="Dubai skyline" className="w-full h-full object-cover" />
             </div>
             {/* Decorative elements */}
