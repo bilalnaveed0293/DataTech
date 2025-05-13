@@ -16,8 +16,8 @@ const WhatIsDataTech = () => {
             </div>
 
             <p className="text-white">
-              DataTech empowers enterprenues consultants and remote workers to
-              thrive globally with no need to register a company.We provide
+              DataTech empowers entrepreneurs consultants and remote workers to
+              thrive globally with no need to register a company. We provide
               legal UAE work permites, exclusive residency solutions and a
               complient tax effecient platform to envoince clients immediately.
             </p>
