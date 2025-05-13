@@ -19,7 +19,7 @@ const WhatIsDataTech = () => {
               DataTech empowers entrepreneurs consultants and remote workers to
               thrive globally with no need to register a company. We provide
               legal UAE work permites, exclusive residency solutions and a
-              complient tax effecient platform to envoince clients immediately.
+              complient tax effecient platform to invoice clients immediately.
             </p>
 
             <div className="flex gap-20">
