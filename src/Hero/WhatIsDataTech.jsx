@@ -16,10 +16,22 @@ const WhatIsDataTech = () => {
             </div>
 
             <p className="text-white">
-              DataTech empowers entrepreneurs consultants and remote workers to
-              thrive globally with no need to register a company. We provide
-              legal UAE work permites, exclusive residency solutions and a
-              complient tax effecient platform to invoice clients immediately.
+              Data Tech is a Dubai-based IT consultancy umbrella company. As
+              well as providing full 360-degree IT services to clients, we also
+              provide invoicing facilities available to our consultants,
+              allowing them to invoice their clients through us for a small fee
+              without the need to set up their own company, deal with VAT
+              returns, set up offices, manage end-of-year accounts, accountants,
+              etc. related to setting up your own company.<br></br>
+              <br></br>We employ you in our company as a consultant, and as an
+              established company, you get immediate access, if required, to UAE
+              residency and our premium banking facilities, which will allow
+              you, within six months, to avail UAE banking services such as
+              property loans, car loans, credit cards, etc.
+              <br></br>
+              <br></br>We handle the entire process for you end-to-end and can
+              provide immediate solutions for invoicing and tax relocation,
+              taking out all the guesswork and stress from the process.
             </p>
 
             <div className="flex gap-20">
@@ -69,15 +81,13 @@ const WhatIsDataTech = () => {
                       Access UAE Residency
                     </h3>
                     <p className="text-white text-sm">
-                      We handle the entire process from visa
-                      applications to biometric screenings, giving you access
-                      to tax-free income, global mobility, and premium
-                      financial services.
+                      We handle the entire process from visa applications to
+                      biometric screenings, giving you access to tax-free
+                      income, global mobility, and premium financial services.
                     </p>
                   </div>
                 </div>
               </div>
-
             </div>
 
             <div className="space-y-4">

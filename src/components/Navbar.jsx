@@ -28,7 +28,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Nav Links */}
+        {/* Nav Links
         <nav
           className={`${
             isOpen ? "block" : "hidden"
@@ -61,16 +61,16 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-        </nav>
+        </nav> */}
 
         {/* Buttons */}
         <div className="hidden lg:flex items-center space-x-4 text-xs">
-          <a
+          {/* <a
             href="#"
             className="w-full sm:w-auto text-white rounded-lg bg-transparent px-4 py-1 sm:px-3 md:px-4 lg:px-5 sm:py-0.5 md:py-1 lg:py-2 transition duration-300 text-xs sm:text-sm md:text-base lg:text-sm border border-[#3754A1] cursor-pointer"
           >
             Log in
-          </a>
+          </a> */}
           <a
             href="#"
             onClick={handleGetStarted}

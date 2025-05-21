@@ -148,7 +148,7 @@ const ServiceGrid = () => {
         </div>
 
         {/* See All Services Button */}
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <button className="text-gray-900 bg-[#CFDFFF] px-8 py-3 rounded-full font-semibold hover:bg-[#3754A1] hover:text-white transition cursor-pointer text-xs">
             See All Services
             <svg
@@ -166,7 +166,7 @@ const ServiceGrid = () => {
               />
             </svg>
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

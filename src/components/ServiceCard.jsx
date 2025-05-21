@@ -42,9 +42,7 @@ const ServiceCard = ({ title, description, blueImage, whiteImage, isActive = fal
       </div>
       {!isActive && (
         <div className="mt-4 text-right">
-          <span className="font-semibold">
-            Learn More &gt;
-          </span>
+         
         </div>
       )}
     </div>

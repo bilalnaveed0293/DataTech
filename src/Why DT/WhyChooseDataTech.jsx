@@ -109,11 +109,11 @@ const WhyChooseDataTech = () => {
           </button> */}
         </div>
 
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <button className="bg-[#3754A1] hover:bg-blue-800 text-white font-medium py-3 px-8 rounded-md transition duration-300 cursor-pointer">
             Learn More
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

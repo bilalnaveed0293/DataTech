@@ -30,6 +30,9 @@ const Hero = () => {
         </div>
 
         <div className="container flex max-sm:items-center flex-col justify-center w-full max-sm:text-center text-left lg:ml-20 relative z-10 mb-4 sm:mb-5 md:mb-6">
+           <h1 className="text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-3xl font-bold text-white leading-tight mb-4 sm:mb-5 md:mb-6">
+            Tired of Paying Too Much Taxes?
+          </h1>
           <h1 className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white leading-tight mb-4 sm:mb-5 md:mb-6">
             Maximize Your Take-Home<br></br> Earnings With{" "}
             <span className="text-[#3754A1]">Data Tech</span>

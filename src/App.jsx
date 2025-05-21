@@ -24,11 +24,13 @@ import WhyChooseDataTech from "./Why DT/WhyChooseDataTech";
 import KeyAdvantages from "./Adv/KeyAdvantages";
 import WhatIsDataTech from "./Hero/WhatIsDataTech";
 import Form from "./Form2/Form";
+import AiBusinessGrowth from "./components/AI";
 import "./App.css";
 import ThreeStepProcess2 from "./Threesteps/ThreeStepProcess2";
 import Hero2 from "./Hero/Hero2";
 
 import "@fontsource/outfit";
+import WhoIsThisServiceFor from "./components/WhoIsThisServiceFor";
 
 function MainContent() {
   const location = useLocation();
@@ -45,10 +47,13 @@ function MainContent() {
       <WhatIsDataTech />
       <FeaturesSection />
       <ThreeStepProcess />
+      <WhoIsThisServiceFor />
+
       <ServiceGrid />
       <WhyChooseDataTech />
-      <TechIntegrationShowcase />
-      <Testimonials />
+      {/* <TechIntegrationShowcase /> */}
+      <AiBusinessGrowth />
+      {/* <Testimonials /> */}
       <Faq />
       {/* <GetInTouch /> */}
       <JoinToExplore />
@@ -69,10 +74,12 @@ function App() {
               <WhatIsDataTech />
               <FeaturesSection />
               <ThreeStepProcess />
+              <WhoIsThisServiceFor />
               <ServiceGrid />
               <WhyChooseDataTech />
-              <TechIntegrationShowcase />
-              <Testimonials />
+              {/* <TechIntegrationShowcase /> */}
+              <AiBusinessGrowth />
+              {/* <Testimonials /> */}
               <Faq />
               {/* <GetInTouch /> */}
               <JoinToExplore />
