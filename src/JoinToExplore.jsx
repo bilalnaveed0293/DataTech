@@ -37,23 +37,6 @@ const JoinToExplore = () => {
                 ></path>
               </svg>
             </button>
-            <button className="bg-transparent cursor-pointer text-white border hover:bg-white hover:text-gray-900 border-white px-6 py-3 rounded-full text-xs flex items-center">
-              Join Now
-              <svg
-                className="ml-2 w-2 h-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                ></path>
-              </svg>
-            </button>
           </div>
         </div>
 
@@ -122,7 +105,6 @@ const JoinToExplore = () => {
                       Strategic tax planning & relocation services to UAE for
                       businesses & individuals.
                     </p>
-                   
                   </div>
 
                   {/* AI Business Solutions */}
@@ -134,7 +116,6 @@ const JoinToExplore = () => {
                       Custom AI agents to reduce costs & accelerate growth for
                       your business.
                     </p>
-                  
                   </div>
 
                   {/* IT Consultant Services */}
@@ -146,7 +127,6 @@ const JoinToExplore = () => {
                       Expert IT consultants available for daily, weekly, or
                       monthly engagements.
                     </p>
-                   
                   </div>
                 </div>
               </div>
