@@ -12,6 +12,7 @@ import Banner from "./Banner/Banner";
 import ServiceGrid from "./components/ServiceGrid";
 import ValueStrategy from "./offer/ValueStrategy";
 import ThreeStepProcess from "./Threesteps/ThreeStepprocess";
+import ServicesOverview from "./ServicesOffered";
 import NumbersBanner from "./Banner/NumbersBanner";
 import Faq from "./Faq";
 import ItSolutions from "./IT solutions/ItSolutions";
@@ -29,6 +30,9 @@ import "./App.css";
 import ThreeStepProcess2 from "./Threesteps/ThreeStepProcess2";
 import Hero2 from "./Hero/Hero2";
 
+import TaxServicesPage from "./pages/tax";
+import AIServicesPage from "./pages/ai";
+import ConsultantServicesPage from "./pages/consultants";
 import "@fontsource/outfit";
 import WhoIsThisServiceFor from "./components/WhoIsThisServiceFor";
 
@@ -45,6 +49,7 @@ function MainContent() {
       <Navbar />
       <Hero />
       <WhatIsDataTech />
+      <ServicesOverview />
       <FeaturesSection />
       <ThreeStepProcess />
       <WhoIsThisServiceFor />
@@ -72,6 +77,8 @@ function App() {
               <Navbar />
               <Hero />
               <WhatIsDataTech />
+              <ServicesOverview />
+
               <FeaturesSection />
               <ThreeStepProcess />
               <WhoIsThisServiceFor />
@@ -87,6 +94,9 @@ function App() {
           }
         />
         <Route path="/form" element={<Form />} />
+        <Route path="/tax" element={<TaxServicesPage />} />
+        <Route path="/ai" element={<AIServicesPage />} />
+        <Route path="/consultants" element={<ConsultantServicesPage />} />
       </Routes>
     </Router>
   );

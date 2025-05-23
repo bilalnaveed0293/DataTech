@@ -28,7 +28,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Nav Links
+        {/* Nav Links */}
         <nav
           className={`${
             isOpen ? "block" : "hidden"
@@ -36,32 +36,28 @@ const Navbar = () => {
         >
           <ul className="flex flex-col space-y-4 p-4 lg:p-0 lg:flex-row lg:space-y-0 lg:space-x-10  text-sm">
             <li>
-              <a href="#" className="text-white hover:text-[#3754A1]">
+              <a href="/" className="text-white hover:text-[#3754A1]">
                 Home
               </a>
             </li>
             <li>
-              <a href="#" className="text-white hover:text-[#3754A1]">
-                About
+              <a href="/ai" className="text-white hover:text-[#3754A1]">
+                AI Services
               </a>
             </li>
             <li>
-              <a href="#" className="text-white hover:text-[#3754A1]">
-                Page
+              <a href="/consultants" className="text-white hover:text-[#3754A1]">
+                Consultants
               </a>
             </li>
             <li>
-              <a href="#" className="text-white hover:text-[#3754A1]">
-                Feature
+              <a href="/tax" className="text-white hover:text-[#3754A1]">
+                Tax Services
               </a>
             </li>
-            <li>
-              <a href="#" className="text-white hover:text-[#3754A1]">
-                Contact
-              </a>
-            </li>
+           
           </ul>
-        </nav> */}
+        </nav>
 
         {/* Buttons */}
         <div className="hidden lg:flex items-center space-x-4 text-xs">
