@@ -47,10 +47,8 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row justify-start gap-3 sm:gap-4 md:gap-6">
-            <button className="w-full sm:w-auto text-[#3754A1] rounded-lg bg-white px-4 py-1 sm:px-3 md:px-4 lg:px-5 sm:py-0.5 md:py-1 lg:py-2 transition duration-300 text-xs sm:text-sm md:text-base lg:text-lg border border-gray-300 cursor-pointer">
-              Explore as You Go
-            </button>
+          {/* <div className="flex flex-col sm:flex-row justify-start gap-3 sm:gap-4 md:gap-6">
+          
             <button
              
               className="w-full sm:w-auto text-white bg-transparent rounded-lg px-4 py-2 sm:px-3 md:px-4 lg:px-5 sm:py-2.5 md:py-3 lg:py-2 transition duration-300 flex items-center justify-start text-xs sm:text-sm md:text-base lg:text-lg border border-gray-300 cursor-pointer"
@@ -69,7 +67,7 @@ const Hero = () => {
                 />
               </svg>
             </button>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

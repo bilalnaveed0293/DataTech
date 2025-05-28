@@ -22,7 +22,6 @@ import Navbar from "../components/Navbar";
 import JoinToExplore from "../JoinToExplore";
 import coin1 from "../assets/coin1.mp4";
 
-
 const TaxServicesPage = () => {
   //scroll to top
   window.scrollTo(0, 0);
@@ -53,7 +52,7 @@ const TaxServicesPage = () => {
 
   // Hero Section Component
   const HeroSection = () => (
-    <div className="bg-gradient-to-br from-[#3754A1] to-[#2c4178] text-white py-20 min-h-screen flex items-center">
+    <section className="relative min-h-[35rem] sm:min-h-[35rem] md:min-h-[38rem] lg:min-h-screen xl:min-h-screen 2xl:min-h-screen flex flex-col items-start text-white justify-center text-left px-2 sm:px-4 md:px-6 ">
       {/* Video Background */}
       <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
         <video
@@ -88,7 +87,7 @@ const TaxServicesPage = () => {
               client relationships through our comprehensive tax-efficient
               solutions.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            {/* <div className="flex flex-col sm:flex-row gap-4">
               <button className="bg-white text-[#3754A1] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 flex items-center justify-center">
                 Start Tax Assessment
                 <FaArrowRight className="ml-2 w-4 h-4" />
@@ -96,12 +95,11 @@ const TaxServicesPage = () => {
               <button className="border border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-[#3754A1] transition-all duration-300">
                 Learn More
               </button>
-            </div>
+            </div> */}
           </div>
-        
         </div>
       </div>
-    </div>
+    </section>
   );
 
   // Benefits Section Component

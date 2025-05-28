@@ -61,7 +61,8 @@ const ConsultantServicesPage = () => {
 
   // Hero Section Component
   const HeroSection = () => (
-    <div className="bg-gradient-to-br from-[#6366f1] to-[#4f46e5] text-white py-20 min-h-screen flex items-center">
+    <section className="relative min-h-[35rem] sm:min-h-[35rem] md:min-h-[38rem] lg:min-h-screen xl:min-h-screen 2xl:min-h-screen flex flex-col items-start text-white justify-center text-left px-2 sm:px-4 md:px-6 ">
+      {/* Video Background */}
       <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
         <video
           className="absolute w-full h-full object-cover"
@@ -88,12 +89,23 @@ const ConsultantServicesPage = () => {
             <h1 className="text-5xl font-bold mb-6">
               Access <span className="text-[#c7d2fe]">Top-Tier</span> IT Talent
             </h1>
-            <p className="text-xl text-white text-opacity-90 mb-8 leading-relaxed">
-              Connect with vetted IT specialists for your projects. Whether you
-              need daily support, weekly consultations, or monthly engagements,
-              our global network of expert consultants is ready to accelerate
-              your success.
+
+            <p className="text-md text-white text-opacity-90 mb-8 leading-relaxed">
+              Connect with vetted IT specialists for your projects. Whether
+              you're a company needing technical expertise or an IT professional
+              looking to subcontract work, our global network of expert
+              consultants provides flexible solutions for daily support, weekly
+              consultations, or monthly engagements to accelerate your success.
             </p>
+
+            <p className="text-md text-white text-opacity-90 mb-6 leading-relaxed">
+              For IT professionals and consultancies, we offer seamless
+              subcontracting opportunities that allow you to scale your capacity
+              without the overhead. Partner with us to access additional
+              projects, specialized expertise, or handle overflow work while
+              maintaining your client relationships.
+            </p>
+
             <div className="grid grid-cols-3 gap-6 mb-8">
               <div className="text-center">
                 <div className="text-3xl font-bold mb-1">500+</div>
@@ -114,20 +126,10 @@ const ConsultantServicesPage = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-white text-[#6366f1] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 flex items-center justify-center">
-                Hire a Consultant
-                <FaArrowRight className="ml-2 w-4 h-4" />
-              </button>
-              <button className="border border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-[#6366f1] transition-all duration-300">
-                Browse Specialists
-              </button>
-            </div>
           </div>
-       
         </div>
       </div>
-    </div>
+    </section>
   );
 
   // Expertise Areas Section
@@ -220,7 +222,10 @@ const ConsultantServicesPage = () => {
             </h2>
             <p className="max-w-3xl mx-auto text-gray-600 text-lg">
               Our network includes certified experts across all major IT
-              disciplines, ready to tackle your most challenging projects.
+              disciplines, serving both companies seeking technical expertise
+              and IT professionals looking to subcontract specialized work.
+              Ready to tackle your most challenging projects with flexible
+              partnership models.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -272,7 +277,7 @@ const ConsultantServicesPage = () => {
           "Perfect for urgent fixes",
           "Flexible scheduling",
         ],
-        pricing: "Starting from $200/day",
+        pricing: "Starting from €200/day",
         popular: false,
       },
       {
@@ -287,7 +292,7 @@ const ConsultantServicesPage = () => {
           "Regular check-ins",
           "Progress tracking",
         ],
-        pricing: "Starting from $1,200/week",
+        pricing: "Starting from €1,200/week",
         popular: true,
       },
       {
@@ -302,7 +307,7 @@ const ConsultantServicesPage = () => {
           "Team integration",
           "Best cost efficiency",
         ],
-        pricing: "Starting from $4,500/month",
+        pricing: "Starting from €4,500/month",
         popular: false,
       },
     ];
@@ -319,7 +324,9 @@ const ConsultantServicesPage = () => {
             </h2>
             <p className="max-w-3xl mx-auto text-gray-600 text-lg">
               Choose the engagement model that best fits your project timeline,
-              budget, and business requirements.
+              budget, and business requirements. Perfect for companies needing
+              specialized skills or IT professionals seeking reliable
+              subcontracting partnerships.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

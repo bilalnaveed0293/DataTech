@@ -22,7 +22,8 @@ const WhatIsDataTech = () => {
               allowing them to invoice their clients through us for a small fee
               without the need to set up their own company, deal with VAT
               returns, set up offices, manage end-of-year accounts, accountants,
-              etc. related to setting up your own company.<br></br>
+              etc. and other issues related to setting up your own company.
+              <br></br>
               <br></br>We employ you in our company as a consultant, and as an
               established company, you get immediate access, if required, to UAE
               residency and our premium banking facilities, which will allow
@@ -96,12 +97,17 @@ const WhatIsDataTech = () => {
                   <Check className="h-4 w-4 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg"> Act With Integrity</h3>
-                  <p className="text-white text-sm">
-                    Our company exists to help merchants sell more. We make
-                    every decision and measure every outcome based on how well
-                    it serves our customers.
-                  </p>
+                  <div>
+                    <h3 className="font-semibold text-lg">
+                      Access Premium Banking Services
+                    </h3>
+                    <p className="text-white text-sm">
+                      As our employed consultant, gain immediate access to UAE's
+                      premium banking facilities including property loans, car
+                      loans, credit cards, and investment opportunities within
+                      six months.
+                    </p>
+                  </div>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -109,12 +115,17 @@ const WhatIsDataTech = () => {
                   <Check className="h-4 w-4 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg">Do the right thing</h3>
-                  <p className="text-white text-sm">
-                    Our company exists to help merchants sell more. We make
-                    every decision and measure every outcome based on how well
-                    it serves our customers.
-                  </p>
+                  <div>
+                    <h3 className="font-semibold text-lg">
+                      Full Legal Tax Compliance
+                    </h3>
+                    <p className="text-white text-sm">
+                      We manage all VAT returns, accounting, legal
+                      documentation, and compliance requirements, eliminating
+                      the administrative burden of running your own consultancy
+                      business.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

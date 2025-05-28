@@ -49,11 +49,11 @@ const Hero2 = () => {
                                 <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                             </svg>
                         </button>
-                        <button
+                        {/* <button
                             className="w-full sm:w-auto rounded-lg text-[#3754A1] bg-white px-4 py-1 sm:px-3 md:px-4 lg:px-5 sm:py-0.5 md:py-1 lg:py-2 transition duration-300 text-xs sm:text-sm md:text-base lg:text-lg border border-gray-300 cursor-pointer"
                         >
                             Explore as You Go
-                        </button>
+                        </button> */}
                     </div>
                 </div>
             </section>

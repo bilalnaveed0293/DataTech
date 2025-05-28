@@ -55,7 +55,8 @@ const AIServicesPage = () => {
 
   // Hero Section Component
   const HeroSection = () => (
-    <div className="bg-gradient-to-br from-[#2c71f1] to-[#1e5bb8] text-white py-20  min-h-screen flex items-center">
+    <section className="relative min-h-[35rem] sm:min-h-[35rem] md:min-h-[38rem] lg:min-h-screen xl:min-h-screen 2xl:min-h-screen flex flex-col items-start text-white justify-center text-left px-2 sm:px-4 md:px-6 ">
+      {/* Video Background */}
       <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
         <video
           className="absolute w-full h-full object-cover"
@@ -107,12 +108,10 @@ const AIServicesPage = () => {
                 </div>
               </div>
             </div>
-         
           </div>
-         
         </div>
       </div>
-    </div>
+    </section>
   );
 
   // AI Solutions Section

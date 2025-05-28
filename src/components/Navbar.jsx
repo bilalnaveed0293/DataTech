@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import logo from "../assets/datatech logo2.svg";
 import { Menu, X } from "lucide-react"; // optional: `npm i lucide-react`
 import { useNavigate } from "react-router-dom";
-
+import CustomLanguageSwitcher from "./CustomLanguageSwitcher";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
@@ -46,7 +46,10 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="/consultants" className="text-white hover:text-[#3754A1]">
+              <a
+                href="/consultants"
+                className="text-white hover:text-[#3754A1]"
+              >
                 Consultants
               </a>
             </li>
@@ -55,7 +58,6 @@ const Navbar = () => {
                 Tax Services
               </a>
             </li>
-           
           </ul>
         </nav>
 
@@ -67,11 +69,16 @@ const Navbar = () => {
           >
             Log in
           </a> */}
+
+          <div className="flex items-center gap-2 border border-gray-300 rounded-lg px-3 py-1 text-white text-xs sm:text-sm md:text-base lg:text-sm">
+            <p className="text-center">Select Language</p>
+            <div id="google_translate_element"></div>
+          </div>
+
           <a
             href="#"
             onClick={handleGetStarted}
             className="w-full sm:w-auto text-white rounded-lg bg-transparent px-4 py-1 sm:px-3 md:px-4 lg:px-5 sm:py-0.5 md:py-1 lg:py-2 transition duration-300 text-xs sm:text-sm md:text-base lg:text-sm border border-[#3754A1] cursor-pointer"
-
           >
             Get Started
           </a>

@@ -53,17 +53,18 @@ const AiBusinessGrowth = () => {
             </div>
 
             <p className="text-white">
-              Did you know that you can train AI agents personalized for your
-              business and requirements? No matter your business, let us provide
-              you with solutions to firstly reduce your overheads by decreasing
-              staff and increasing your output using AI innovations.
+              While your competitors embrace AI to cut costs and accelerate
+              growth, can your business afford to fall behind? We provide
+              cutting-edge AI solutions and latest technology implementations
+              that reduce overheads, increase output, and keep you ahead of the
+              competition.
             </p>
 
             <p className="text-white">
-              Take an initial free consultation to allow us to show you what we
-              can do for you. Our AI solutions are tailored to your specific
-              needs and can transform how your business operates in the digital
-              age.
+              Don't let your competition outpace you with superior technology.
+              Take our free consultation to discover how upgrading to the latest
+              AI and tech solutions can transform your operations, slash costs,
+              and accelerate your business growth in today's digital landscape.
             </p>
 
             <div className="flex gap-20">
@@ -170,8 +171,8 @@ const AiBusinessGrowth = () => {
                     htmlFor="businessType"
                     className="block text-sm font-medium text-gray-700 mb-1"
                   >
-                    <FaBuilding className="inline mr-2 text-[#3754A1] mb-1" /> Type
-                    of Business
+                    <FaBuilding className="inline mr-2 text-[#3754A1] mb-1" />{" "}
+                    Type of Business
                   </label>
                   <input
                     id="businessType"
@@ -208,8 +209,8 @@ const AiBusinessGrowth = () => {
                     htmlFor="numberOfEmployees"
                     className="block text-sm font-medium text-gray-700 mb-1"
                   >
-                    <FaUsers className="inline mr-2 text-[#3754A1] mb-1" /> Number of
-                    Employees
+                    <FaUsers className="inline mr-2 text-[#3754A1] mb-1" />{" "}
+                    Number of Employees
                   </label>
                   <select
                     id="numberOfEmployees"
@@ -256,8 +257,8 @@ const AiBusinessGrowth = () => {
                     htmlFor="website"
                     className="block text-sm font-medium text-gray-700 mb-1"
                   >
-                    <FaGlobe className="inline mr-2 text-[#3754A1] mb-1" /> Company
-                    Website
+                    <FaGlobe className="inline mr-2 text-[#3754A1] mb-1" />{" "}
+                    Company Website
                   </label>
                   <input
                     id="website"
@@ -274,8 +275,8 @@ const AiBusinessGrowth = () => {
                     htmlFor="contactName"
                     className="block text-sm font-medium text-gray-700 mb-1"
                   >
-                    <FaUserTie className="inline mr-2 text-[#3754A1] mb-1" /> Contact
-                    Name
+                    <FaUserTie className="inline mr-2 text-[#3754A1] mb-1" />{" "}
+                    Contact Name
                   </label>
                   <input
                     id="contactName"
@@ -358,13 +359,12 @@ const AiBusinessGrowth = () => {
                 Expert IT Consultants For Hire
               </h3>
               <p className="text-gray-600 mt-2">
-                If you currently have a consultant contract but wish to
-                externalize part or all of the work, we can provide you the
-                necessary contractors for all IT or other projects.
+                Need specialized expertise to implement the latest technologies?
+                Our expert IT consultants help you upgrade systems, reduce
+                costs, and stay competitive. If you don't modernize, your
+                competitors will gain the advantage.
               </p>
             </div>
-
-           
           </div>
         </div>
       </div>
