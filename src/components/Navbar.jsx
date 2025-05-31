@@ -19,7 +19,7 @@ const Navbar = () => {
         <img src={logo} alt="datatech logo" className="h-12 lg:h-16  w-auto" />
 
         {/* Add language selector for mobile */}
-        <li className="lg:hidden">
+        <li className="">
          
               <div id="google_translate_element"></div>
        
@@ -76,11 +76,6 @@ const Navbar = () => {
           >
             Log in
           </a> */}
-
-          <div className="flex items-center gap-2 border border-gray-300 rounded-lg px-3 py-1 text-white text-xs sm:text-sm md:text-base lg:text-sm">
-            <p className="text-center">Select Language</p>
-            <div id="google_translate_element"></div>
-          </div>
 
           <a
             href="#"
