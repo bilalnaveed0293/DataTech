@@ -18,6 +18,13 @@ const Navbar = () => {
         {/* Logo */}
         <img src={logo} alt="datatech logo" className="h-12 lg:h-16  w-auto" />
 
+        {/* Add language selector for mobile */}
+        <li className="lg:hidden">
+         
+              <div id="google_translate_element"></div>
+       
+        </li>
+
         {/* Mobile toggle button */}
         <div className="lg:hidden">
           <button
@@ -32,7 +39,7 @@ const Navbar = () => {
         <nav
           className={`${
             isOpen ? "block" : "hidden"
-          } absolute top-full left-0 w-full bg-transparent border-t border-gray-200 lg:border-none lg:static lg:block lg:w-auto`}
+          } absolute top-full left-0 w-full max-sm:bg-black border-t border-gray-200 lg:border-none lg:static lg:block lg:w-auto`}
         >
           <ul className="flex flex-col space-y-4 p-4 lg:p-0 lg:flex-row lg:space-y-0 lg:space-x-10  text-sm">
             <li>
