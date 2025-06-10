@@ -249,7 +249,7 @@ const ThreeStepProcess = () => {
                         type="tel"
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="+97 (555) 000-0000"
+                        placeholder="+971 58 5114267"
                         className="w-full pl-16 pr-4 py-2 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
                       />
                     </div>

@@ -68,7 +68,7 @@ const GetInTouch = () => {
                             <input
                                 id="phone"
                                 type="tel"
-                                placeholder="+97 (555) 000-0000"
+                                placeholder="+971 58 5114267"
                                 className="w-full pl-16 pr-4 py-2 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 text-xs"
                             />
                         </div>

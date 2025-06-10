@@ -505,7 +505,7 @@ const AIServicesPage = () => {
                   type="tel"
                   value={formData.contactPhone}
                   onChange={handleChange}
-                  placeholder="+971 55 123 4567"
+                  placeholder="+971 58 5114267"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2c71f1] transition-all"
                   required
                 />
